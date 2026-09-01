@@ -228,7 +228,7 @@ The relational database architecture is defined in [`prisma/schema.prisma`](file
 
 ### 2. Installation
 ```bash
-git clone https://github.com/leelakrishnakurra97/Final-LMS-Project.git
+git clone https://github.com/leelakrishnakurra97/learning-management-system.git
 cd learning-management-system
 npm install
 ```

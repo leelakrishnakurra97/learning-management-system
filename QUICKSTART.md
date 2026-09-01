@@ -1,209 +1,121 @@
-# Quick Start Guide
+# Quick Start Guide — EduVerse Learning Management System
 
 ## 🚀 Getting Started
 
 ### Prerequisites
 - Node.js 18+ and npm
-- PostgreSQL 12+ (or Docker)
+- PostgreSQL 14+ (or Docker Compose)
 - Git
 
-### Step 1: Install Dependencies
+### Step 1: Clone Repository & Install Dependencies
 ```bash
-cd Final
+git clone https://github.com/leelakrishnakurra97/learning-management-system.git
+cd learning-management-system
 npm install
 ```
 
-### Step 2: Set Up Environment
+### Step 2: Set Up Environment Configuration
 Create a `.env` file in the project root:
 ```bash
 cp .env.example .env
 ```
 
-Edit `.env` and update:
-```
-DATABASE_URL="postgresql://user:password@localhost:5432/lms_db"
-VITE_API_URL="http://localhost:3000"
+Edit `.env` and verify database and server port parameters:
+```env
+PORT=5000
+VITE_API_URL="http://localhost:5000"
+DATABASE_URL="postgresql://postgres:postgres@localhost:5432/learning_management_system?schema=public"
+JWT_SECRET="eduverse-lms-super-secret-jwt-key"
+GEMINI_API_KEY="your-google-gemini-api-key"
 ```
 
-### Step 3: Set Up Database
+### Step 3: Set Up Relational Database
 ```bash
-# Run migrations
-npx prisma migrate dev --name init
+# Push Prisma schema to PostgreSQL
+npm run db:push
 
-# Seed sample data
-npx prisma db seed
+# Seed initial curriculum hierarchy and demo user accounts
+npm run db:seed
 
 # Generate Prisma client
 npx prisma generate
 ```
 
-### Step 4: Start Development Server
+### Step 4: Start Concurrent Development Server
 ```bash
 npm run dev
 ```
 
-Open http://localhost:5173 in your browser.
+Open `http://localhost:5173` in your browser.
 
-### Step 5: Access the Application
-- **Student**: Login with student credentials
-- **Teacher**: Login with teacher credentials  
-- **Admin**: Login with admin credentials
+### Step 5: Access the Application (Demo Credentials)
+- **Student**: `student@eduverse.com` / `student123`
+- **Teacher**: `teacher@eduverse.com` / `teacher123`
+- **Admin**: `admin@eduverse.com` / `admin123`
+- **Parent**: `parent@eduverse.com` / `parent123`
 
 ## 📚 Project Structure
 
-```
-src/
-├── components/          # React components (12 essential)
-├── services/           # API service layer
-├── store/              # State management (Zustand)
-│   ├── types.ts       # Database-aligned types
-│   └── index.ts       # Store implementation
-├── utils/              # Helper functions
-├── App.tsx             # Main app component
-├── main.tsx            # Entry point
-└── index.css           # Global styles
-
-prisma/
-├── schema.prisma       # Database schema (20+ models)
-└── seed.ts            # Sample data
-
+```text
+learning-management-system/
+├── prisma/
+│   ├── schema.prisma         # Relational database schema (20+ models)
+│   └── seed.ts               # Seeder for dynamic curriculum hierarchy
+├── server/                   # Backend Express API Server
+│   ├── index.ts              # Server entry point
+│   ├── routes/               # API route modules (Auth, Progress, Quiz, Tutor, etc.)
+│   └── middleware/           # JWT Authentication & RBAC middleware
+├── src/                      # React 18 + TypeScript Frontend Application
+│   ├── components/           # UI Components & Role Portals
+│   ├── services/             # Centralized API service layer
+│   ├── store/                # Zustand global application state management
+│   └── utils/                # Utility helpers
 ```
 
-## 🎯 Main Features
+## 🎯 Key Module Features
 
 ### For Students
-- **Landing Page**: Home and introduction
-- **Dashboard**: Overview of courses and progress
-- **Deep Lectures**: Watch course videos with tracking
-- **Quiz Center**: Take quizzes and see results
-- **Assignments**: Submit and track assignments
-- **Profile**: Manage account and view progress
+- **Course Player**: Watch video lectures with duration tracking and auto-resume.
+- **Sequential Topic Progression**: Prerequisites enforcement (video %, quiz score, assignment submission).
+- **Quiz Center**: Timed quizzes with MCQs, true/false, immediate grading, and scorecards.
+- **AI Tutor Assistant**: Step-by-step homework help powered by Google Gemini API.
 
 ### For Teachers
-- **Dashboard**: Manage courses and students
-- **Content**: Upload videos, notes, and resources
-- **Assessments**: Create quizzes and assignments
-- **Grading**: Review and grade submissions
-- **Analytics**: View student performance
+- **Course & Lesson Management**: Create courses, add chapters, attach videos and PDF notes.
+- **Assessment Desk**: Build quizzes and view submission analytics.
+- **Submission Grading Desk**: Grade student assignments, assign numerical marks, and provide feedback.
+- **Live Classrooms**: Host live WebRTC meetings via LiveKit with chat and interactive whiteboard.
 
 ### For Admins
-- **Portal**: System administration
-- **Structure**: Manage boards, classes, subjects
-- **Analytics**: Platform-wide analytics
+- **Academic Hierarchy Administration**: Manage Boards, Classes, Subjects, Units, Chapters, and Topics.
+- **User & RBAC Controls**: Assign roles, configure permissions, and monitor enrollment metrics.
 
-## 🔌 API Integration
+## 🔌 API Integration Example
 
-All API calls are organized in `src/services/api.ts`:
+All API requests are handled in `src/services/api.ts`:
 
 ```typescript
-// Example: Fetch boards
+// Fetch academic boards
 import { academicAPI } from './services/api';
 const boards = await academicAPI.getBoards();
 
-// Example: Submit quiz
+// Submit quiz attempt
 import { quizAPI } from './services/api';
 const result = await quizAPI.submitQuizAttempt(quizId, responses);
 ```
 
-## 🗄️ Database
-
-### View Database
-```bash
-# Open Prisma Studio
-npx prisma studio
-```
-
-### Create Migrations
-```bash
-# After schema changes
-npx prisma migrate dev --name <migration_name>
-```
-
-## 🧪 Development Commands
+## 🗄️ Database Management Commands
 
 ```bash
-# Dev server
-npm run dev
+# Open Prisma Studio GUI
+npm run db:studio
 
-# Build for production
-npm run build
+# Apply schema updates to database
+npm run db:push
 
-# Preview production build
-npm run preview
-
-# Lint code
-npm run lint
-
-# Open Prisma Studio
-npx prisma studio
-
-# Reset database (caution!)
-npx prisma migrate reset
+# Seed initial database records
+npm run db:seed
 ```
-
-## 📝 Database Schema Highlights
-
-**Key Models:**
-- `User` - Core user account
-- `Board`, `Class`, `Subject`, `Unit`, `Chapter`, `Topic` - Academic hierarchy
-- `CourseVideo`, `CourseNote`, `CourseResource` - Learning materials
-- `Quiz`, `QuizQuestion`, `QuizOption` - Assessments
-- `Assignment`, `AssignmentSubmission` - Assignments
-- `StudentTopicProgress`, `StudentAnalytics` - Progress tracking
-- `LiveClass`, `LiveClassParticipant` - Live sessions
-- `Subscription`, `Payment` - Billing
-
-## 🔐 Authentication
-
-The app uses JWT tokens stored in localStorage:
-```typescript
-// Token is automatically added to API headers
-const token = localStorage.getItem('auth_token');
-```
-
-## 🐛 Troubleshooting
-
-### Port Already in Use
-```bash
-# Kill process on port 5173
-npx kill-port 5173
-```
-
-### Database Connection Failed
-- Ensure PostgreSQL is running
-- Check `DATABASE_URL` in `.env`
-- Verify credentials
-
-### Prisma Errors
-```bash
-# Reinstall Prisma
-npm install -D prisma @prisma/client
-
-# Regenerate client
-npx prisma generate
-```
-
-## 📖 Documentation
-
-- **REFACTORING.md** - Detailed refactoring guide
-- **CLEANUP.md** - Implementation checklist
-- **SUMMARY.md** - Complete summary report
-- **prisma/schema.prisma** - Database schema documentation
-
-## 🤝 Contributing
-
-1. Create a branch: `git checkout -b feature/your-feature`
-2. Commit changes: `git commit -am 'Add feature'`
-3. Push branch: `git push origin feature/your-feature`
-4. Create Pull Request
-
-## 📞 Support
-
-For questions:
-1. Check existing documentation
-2. Review API types in `src/store/types.ts`
-3. Examine API implementations in `src/services/api.ts`
-4. Check database schema in `prisma/schema.prisma`
 
 ---
 

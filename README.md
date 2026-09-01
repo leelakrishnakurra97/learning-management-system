@@ -205,7 +205,7 @@ learning-management-system/
 
 ## 🗄️ Database Schema Summary (Prisma ORM)
 
-The relational database architecture is defined in [`prisma/schema.prisma`](file:///c:/Users/Leela/Downloads/Final-LMS-Project-main/prisma/schema.prisma) with over 20 structured models:
+The relational database architecture is defined in [`prisma/schema.prisma`](prisma/schema.prisma) with over 20 structured models:
 
 - **User Management**: `User`, `Role`, `Permission`, `RolePermission`, `UserRoleJoin`, `Admin`, `Teacher`, `Student`.
 - **Academic Hierarchy**: `Board`, `Class`, `Subject`, `Unit`, `Chapter`, `Topic`.

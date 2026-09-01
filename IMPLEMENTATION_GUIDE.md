@@ -1,7 +1,7 @@
-# Nexora Learning - Account Creation & Subscription Workflow Implementation
+# EduVerse Learning - Account Creation & Subscription Workflow Implementation
 
 ## Overview
-This document describes the complete workflow for user account creation, email credential delivery, and subscription activation in the Nexora Learning platform.
+This document describes the complete workflow for user account creation, email credential delivery, and subscription activation in the EduVerse Learning platform.
 
 ## Complete Workflow Flow
 
@@ -266,7 +266,7 @@ SMTP_HOST="smtp.gmail.com"
 SMTP_PORT="587"
 SMTP_USER="nexoralmslearning@gmail.com"
 SMTP_PASS="zrgiibdlrvsahxwn"
-SMTP_FROM="Nexora Learning <nexoralmslearning@gmail.com>"
+SMTP_FROM="EduVerse Learning <nexoralmslearning@gmail.com>"
 SMTP_SECURE="false"
 
 # Frontend

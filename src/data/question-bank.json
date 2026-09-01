@@ -1,0 +1,1366 @@
+{
+  "math-sets": [
+    {
+      "question": "Given two sets A = {1, 3, 5} and B = {1, 2, 3, 4}, what is the intersection A ∩ B?",
+      "options": ["{1, 3}", "{1, 2, 3, 4, 5}", "{1}", "{2, 4, 5}"],
+      "correctAnswerIndex": 0,
+      "explanation": "The intersection of sets A and B contains only the elements common to both sets, which are 1 and 3."
+    },
+    {
+      "question": "If set A has n elements, how many subsets does its power set P(A) contain?",
+      "options": ["2^n", "n^2", "2n", "n!"],
+      "correctAnswerIndex": 0,
+      "explanation": "A set with n elements has 2^n possible subsets, representing the cardinality of the power set."
+    },
+    {
+      "question": "If a relation R is reflexive, symmetric, and transitive, it is defined as an:",
+      "options": ["Equivalence relation", "Inverse relation", "Identity relation", "Antisymmetric relation"],
+      "correctAnswerIndex": 0,
+      "explanation": "A relation satisfying reflexivity, symmetry, and transitivity is called an equivalence relation."
+    },
+    {
+      "question": "Let A = {1, 2} and B = {3, 4}. Find the Cartesian product A × B.",
+      "options": ["{(1,3), (1,4), (2,3), (2,4)}", "{(1,3), (2,4)}", "{1, 2, 3, 4}", "{(3,1), (3,2), (4,1), (4,2)}"],
+      "correctAnswerIndex": 0,
+      "explanation": "The Cartesian product contains all ordered pairs (a, b) where a is in A and b is in B."
+    },
+    {
+      "question": "If a function f: A → B maps different elements of A to different elements of B, f is described as:",
+      "options": ["Injective (one-to-one)", "Surjective (onto)", "Bijective", "Constant"],
+      "correctAnswerIndex": 0,
+      "explanation": "An injective (one-to-one) function ensures that distinct domain elements map to distinct codomain elements."
+    },
+    {
+      "question": "For a function f: A → B, if the range of f equals B (the codomain), then f is described as:",
+      "options": ["Surjective (onto)", "Injective (one-to-one)", "Inverse", "Identity"],
+      "correctAnswerIndex": 0,
+      "explanation": "A function is surjective (onto) if every element in the codomain is mapped to by at least one domain element."
+    },
+    {
+      "question": "A function that is both injective and surjective is called:",
+      "options": ["Bijective", "Composite", "Linear", "Constant"],
+      "correctAnswerIndex": 0,
+      "explanation": "A bijective function is a one-to-one correspondence, satisfying both injectivity and surjectivity."
+    },
+    {
+      "question": "Given f(x) = x + 2 and g(x) = 2x, find the composite function (f ∘ g)(x).",
+      "options": ["2x + 2", "2(x + 2)", "x^2 + 2", "2x + 4"],
+      "correctAnswerIndex": 0,
+      "explanation": "(f ∘ g)(x) = f(g(x)) = f(2x) = 2x + 2."
+    },
+    {
+      "question": "If n(A) = 10, n(B) = 15, and n(A ∩ B) = 4, find n(A ∪ B).",
+      "options": ["21", "25", "19", "11"],
+      "correctAnswerIndex": 0,
+      "explanation": "By the principle of inclusion-exclusion: n(A ∪ B) = n(A) + n(B) - n(A ∩ B) = 10 + 15 - 4 = 21."
+    },
+    {
+      "question": "According to De Morgan's Laws, what is the complement of (A ∪ B)?",
+      "options": ["A' ∩ B'", "A' ∪ B'", "A ∩ B", "(A ∩ B)'"],
+      "correctAnswerIndex": 0,
+      "explanation": "De Morgan's law states that (A ∪ B)' = A' ∩ B', meaning the complement of a union is the intersection of the complements."
+    }
+  ],
+  "math-numbers": [
+    {
+      "question": "What is the common difference of the Arithmetic Progression (AP): 3, 7, 11, 15, ...?",
+      "options": ["4", "3", "7", "-4"],
+      "correctAnswerIndex": 0,
+      "explanation": "The common difference d is found by subtracting a term from the next: 7 - 3 = 4."
+    },
+    {
+      "question": "State the formula for the nth term of an AP.",
+      "options": ["a + (n - 1)d", "a + nd", "a * r^(n-1)", "n/2 * (2a + d)"],
+      "correctAnswerIndex": 0,
+      "explanation": "The nth term of an AP is given by a_n = a + (n - 1)d, where a is the first term and d is the common difference."
+    },
+    {
+      "question": "What is the common ratio of the Geometric Progression (GP): 2, 6, 18, 54, ...?",
+      "options": ["3", "2", "6", "9"],
+      "correctAnswerIndex": 0,
+      "explanation": "The common ratio r is calculated by dividing a term by the previous term: 6 / 2 = 3."
+    },
+    {
+      "question": "What is the sum to infinity of a GP with first term 'a' and common ratio 'r' where |r| < 1?",
+      "options": ["a / (1 - r)", "a / (r - 1)", "a * (1 - r)", "a * r / (1 - r)"],
+      "correctAnswerIndex": 0,
+      "explanation": "The sum to infinity is S_inf = a / (1 - r) under the convergence condition |r| < 1."
+    },
+    {
+      "question": "Which of the following describes the decimal expansion of an irrational number?",
+      "options": ["Non-terminating and non-recurring", "Terminating", "Non-terminating and recurring", "Repeating block of digits"],
+      "correctAnswerIndex": 0,
+      "explanation": "Irrational numbers have decimal expansions that never end and never form a repeating pattern."
+    },
+    {
+      "question": "According to the Fundamental Theorem of Arithmetic, every composite number can be factored into a unique product of:",
+      "options": ["Prime numbers", "Even numbers", "Rational numbers", "Composite numbers"],
+      "correctAnswerIndex": 0,
+      "explanation": "The theorem states that every composite integer greater than 1 is prime or can be written as a unique product of primes, up to their order."
+    },
+    {
+      "question": "Find the value of 14 mod 5 (14 modulo 5).",
+      "options": ["4", "2", "0", "1"],
+      "correctAnswerIndex": 0,
+      "explanation": "14 divided by 5 is 2 with a remainder of 4. Thus, 14 mod 5 = 4."
+    },
+    {
+      "question": "What is the sum of the first n positive integers?",
+      "options": ["n(n + 1)/2", "n^2", "n(n - 1)/2", "n(n + 1)"],
+      "correctAnswerIndex": 0,
+      "explanation": "The sum of the first n integers forms an AP and is S_n = n(n + 1)/2."
+    },
+    {
+      "question": "A sequence is defined by a_n = 3n - 1. Find the 5th term.",
+      "options": ["14", "15", "12", "16"],
+      "correctAnswerIndex": 0,
+      "explanation": "Substituting n = 5: a_5 = 3(5) - 1 = 14."
+    },
+    {
+      "question": "Which of the following values is irrational?",
+      "options": ["√3", "√9", "3.14", "22/7"],
+      "correctAnswerIndex": 0,
+      "explanation": "√3 is irrational. √9 (= 3), 3.14, and 22/7 are rational representations."
+    }
+  ],
+  "math-algebra": [
+    {
+      "question": "Under what condition are the roots of the quadratic equation ax^2 + bx + c = 0 real and equal?",
+      "options": ["b^2 - 4ac = 0", "b^2 - 4ac > 0", "b^2 - 4ac < 0", "b = 0"],
+      "correctAnswerIndex": 0,
+      "explanation": "Roots are real and equal if the discriminant delta = b^2 - 4ac is exactly equal to zero."
+    },
+    {
+      "question": "What is the sum of the roots of the quadratic equation 3x^2 - 9x + 5 = 0?",
+      "options": ["3", "-3", "5/3", "-5/3"],
+      "correctAnswerIndex": 0,
+      "explanation": "The sum of the roots of ax^2 + bx + c = 0 is given by -b/a = -(-9)/3 = 3."
+    },
+    {
+      "question": "What is the product of the roots of the quadratic equation 2x^2 + 7x - 6 = 0?",
+      "options": ["-3", "3", "-7/2", "7/2"],
+      "correctAnswerIndex": 0,
+      "explanation": "The product of the roots is c/a = -6/2 = -3."
+    },
+    {
+      "question": "The Remainder Theorem states that if polynomial P(x) is divided by (x - r), the remainder is:",
+      "options": ["P(r)", "P(-r)", "0", "r"],
+      "correctAnswerIndex": 0,
+      "explanation": "According to the Remainder Theorem, dividing P(x) by (x - r) yields a remainder of P(r)."
+    },
+    {
+      "question": "If x - 1 is a factor of x^3 - kx^2 + 2x - 3, find the value of k.",
+      "options": ["0", "2", "-2", "1"],
+      "correctAnswerIndex": 0,
+      "explanation": "By the Factor Theorem, P(1) = 0. So 1 - k + 2 - 3 = 0 => -k = 0 => k = 0."
+    },
+    {
+      "question": "Expand the algebraic identity (x + y)^3.",
+      "options": ["x^3 + 3x^2y + 3xy^2 + y^3", "x^3 + y^3", "x^3 + 3xy(x-y) + y^3", "x^3 - 3x^2y + 3xy^2 - y^3"],
+      "correctAnswerIndex": 0,
+      "explanation": "The standard expansion of the binomial (x+y)^3 is x^3 + 3x^2y + 3xy^2 + y^3."
+    },
+    {
+      "question": "Simplify the algebraic expression (a^2 - b^2) / (a - b).",
+      "options": ["a + b", "a - b", "ab", "1"],
+      "correctAnswerIndex": 0,
+      "explanation": "Since (a^2 - b^2) factorizes to (a - b)(a + b), dividing by (a - b) yields a + b."
+    },
+    {
+      "question": "What is the coefficient of x^2 in the expansion of (x + 2)^4?",
+      "options": ["24", "6", "12", "8"],
+      "correctAnswerIndex": 0,
+      "explanation": "The term is 4C2 * x^2 * 2^2 = 6 * 4 * x^2 = 24x^2. The coefficient is 24."
+    },
+    {
+      "question": "What is the degree of the zero polynomial?",
+      "options": ["Undefined", "0", "1", "Negative infinity"],
+      "correctAnswerIndex": 0,
+      "explanation": "The degree of the zero polynomial is mathematically undefined or sometimes set as negative infinity."
+    },
+    {
+      "question": "If the roots of a quadratic equation are 2 and 3, find the quadratic equation.",
+      "options": ["x^2 - 5x + 6 = 0", "x^2 + 5x + 6 = 0", "x^2 - 5x - 6 = 0", "x^2 - 6x + 5 = 0"],
+      "correctAnswerIndex": 0,
+      "explanation": "The equation is x^2 - (sum of roots)x + (product of roots) = 0 => x^2 - 5x + 6 = 0."
+    }
+  ],
+  "math-matrix": [
+    {
+      "question": "What is the determinant of a 2x2 identity matrix?",
+      "options": ["1", "0", "-1", "2"],
+      "correctAnswerIndex": 0,
+      "explanation": "The identity matrix has 1s on the diagonal and 0s elsewhere. Its determinant is 1*1 - 0*0 = 1."
+    },
+    {
+      "question": "A matrix A is invertible if and only if its determinant is:",
+      "options": ["Non-zero", "Zero", "Positive", "1"],
+      "correctAnswerIndex": 0,
+      "explanation": "The inverse of matrix A exists if and only if |A| ≠ 0. If it is zero, the matrix is singular."
+    },
+    {
+      "question": "Which of the following represents the formula for the inverse of a matrix A?",
+      "options": ["adj(A) / det(A)", "det(A) * adj(A)", "adj(A) * det(A)", "A^T / det(A)"],
+      "correctAnswerIndex": 0,
+      "explanation": "The inverse of a matrix is given by the adjoint of the matrix divided by its determinant: A⁻¹ = adj(A) / det(A)."
+    },
+    {
+      "question": "For any square matrix A, what is the value of A * adj(A)?",
+      "options": ["det(A) * I", "det(A)", "I", "A^T"],
+      "correctAnswerIndex": 0,
+      "explanation": "A fundamental theorem states that A * adj(A) = adj(A) * A = det(A) * I, where I is the identity matrix."
+    },
+    {
+      "question": "A square matrix A is called symmetric if:",
+      "options": ["A = A^T", "A = -A^T", "A = A⁻¹", "det(A) = 0"],
+      "correctAnswerIndex": 0,
+      "explanation": "A matrix is symmetric if it is equal to its transpose, meaning a_ij = a_ji."
+    },
+    {
+      "question": "If matrix A is of order 3x4 and matrix B is of order 4x2, what is the order of matrix AB?",
+      "options": ["3x2", "4x4", "2x3", "Incompatible for multiplication"],
+      "correctAnswerIndex": 0,
+      "explanation": "For multiplication, (m x n) * (n x p) yields order (m x p). Here, (3x4) * (4x2) yields 3x2."
+    },
+    {
+      "question": "What is the rank of a 3x3 identity matrix?",
+      "options": ["3", "1", "0", "9"],
+      "correctAnswerIndex": 0,
+      "explanation": "The identity matrix of order 3 has 3 linearly independent rows, hence its rank is 3."
+    },
+    {
+      "question": "According to the Rouché-Capelli Theorem, a system of linear equations AX = B is consistent if and only if:",
+      "options": ["rank(A) = rank([A|B])", "rank(A) < rank([A|B])", "rank(A) = n", "det(A) ≠ 0"],
+      "correctAnswerIndex": 0,
+      "explanation": "The system is consistent if and only if the rank of the coefficient matrix equals the rank of the augmented matrix."
+    },
+    {
+      "question": "What is Cramer's rule formula to calculate the variable x?",
+      "options": ["det(Ax) / det(A)", "det(A) / det(Ax)", "det(Ax) * det(A)", "det(A) - det(Ax)"],
+      "correctAnswerIndex": 0,
+      "explanation": "Cramer's rule states that the value of the variable x is det(Ax) / det(A), where det(A) ≠ 0."
+    },
+    {
+      "question": "For any two square matrices A and B of the same order, (AB)^T is equal to:",
+      "options": ["B^T * A^T", "A^T * B^T", "AB", "BA"],
+      "correctAnswerIndex": 0,
+      "explanation": "The transpose of a product of matrices is the product of their transposes in reverse order: (AB)^T = B^T * A^T."
+    }
+  ],
+  "math-complex": [
+    {
+      "question": "Find the modulus of the complex number z = 3 + 4i.",
+      "options": ["5", "25", "7", "√7"],
+      "correctAnswerIndex": 0,
+      "explanation": "The modulus |z| = √(3^2 + 4^2) = √25 = 5."
+    },
+    {
+      "question": "What is the conjugate of the complex number z = a - ib?",
+      "options": ["a + ib", "-a - ib", "-a + ib", "b - ia"],
+      "correctAnswerIndex": 0,
+      "explanation": "The conjugate of a complex number is obtained by changing the sign of its imaginary part: conjugate(a - ib) = a + ib."
+    },
+    {
+      "question": "According to De Moivre's Theorem, what is (cos θ + i sin θ)^n equal to?",
+      "options": ["cos(nθ) + i sin(nθ)", "cos^n(θ) + i sin^n(θ)", "cos(nθ) - i sin(nθ)", "n(cos θ + i sin θ)"],
+      "correctAnswerIndex": 0,
+      "explanation": "De Moivre's theorem states that (cos θ + i sin θ)^n = cos(nθ) + i sin(nθ)."
+    },
+    {
+      "question": "Find the principal argument of the complex number z = 1 + i.",
+      "options": ["π/4", "π/2", "π/3", "π/6"],
+      "correctAnswerIndex": 0,
+      "explanation": "The argument is tan⁻¹(1/1) = tan⁻¹(1) = π/4."
+    },
+    {
+      "question": "If ω is a complex cube root of unity, what is the value of 1 + ω + ω^2?",
+      "options": ["0", "1", "-1", "3"],
+      "correctAnswerIndex": 0,
+      "explanation": "The sum of all three cube roots of unity is exactly equal to zero."
+    },
+    {
+      "question": "What is the value of i^50?",
+      "options": ["-1", "1", "i", "-i"],
+      "correctAnswerIndex": 0,
+      "explanation": "i^50 = (i^4)^12 * i^2 = 1 * (-1) = -1."
+    },
+    {
+      "question": "What is the exponential (Euler) form of a complex number?",
+      "options": ["r * e^(iθ)", "r * (cos θ + i sin θ)", "x + iy", "r * e^(θ)"],
+      "correctAnswerIndex": 0,
+      "explanation": "The exponential form of a complex number is z = r * e^(iθ), where r is the modulus and θ is the argument."
+    },
+    {
+      "question": "Find the polar form of the complex number z = i.",
+      "options": ["cos(π/2) + i sin(π/2)", "cos(π) + i sin(π)", "cos(0) + i sin(0)", "cos(π/4) + i sin(π/4)"],
+      "correctAnswerIndex": 0,
+      "explanation": "For z = i, r = 1 and θ = π/2. Thus, polar form is cos(π/2) + i sin(π/2)."
+    },
+    {
+      "question": "What is the product of a complex number and its conjugate, z * z'?",
+      "options": ["|z|^2", "|z|", "Real part of z", "Imaginary part of z"],
+      "correctAnswerIndex": 0,
+      "explanation": "For z = a + ib, z * z' = (a + ib)(a - ib) = a^2 + b^2 = |z|^2."
+    },
+    {
+      "question": "If ω is a complex cube root of unity, what is ω^3 equal to?",
+      "options": ["1", "0", "-1", "ω"],
+      "correctAnswerIndex": 0,
+      "explanation": "By definition, ω is a root of x^3 = 1, so ω^3 = 1."
+    }
+  ],
+  "math-equations": [
+    {
+      "question": "A polynomial equation of degree n has exactly how many complex roots (counting multiplicity)?",
+      "options": ["n", "n - 1", "2n", "n^2"],
+      "correctAnswerIndex": 0,
+      "explanation": "The Fundamental Theorem of Algebra states that a polynomial equation of degree n has exactly n complex roots, counting multiplicity."
+    },
+    {
+      "question": "According to Vieta's formulas, what is the sum of the roots of the cubic equation ax^3 + bx^2 + cx + d = 0?",
+      "options": ["-b/a", "c/a", "-d/a", "b/a"],
+      "correctAnswerIndex": 0,
+      "explanation": "For any polynomial equation, the sum of the roots is given by the negative of the coefficient of the second-highest term divided by the leading coefficient: -b/a."
+    },
+    {
+      "question": "For a polynomial equation with real coefficients, complex roots must always occur in:",
+      "options": ["Conjugate pairs", "Identical triplets", "Real numbers", "None of these"],
+      "correctAnswerIndex": 0,
+      "explanation": "The Complex Conjugate Root Theorem states that if a + ib is a root, then a - ib must also be a root."
+    },
+    {
+      "question": "Descartes' Rule of Signs is used to find the maximum number of:",
+      "options": ["Positive and negative real roots", "Complex roots", "Rational roots", "Integer roots"],
+      "correctAnswerIndex": 0,
+      "explanation": "Descartes' Rule of Signs estimates the number of positive and negative real roots based on sign changes of coefficients."
+    },
+    {
+      "question": "What is the product of the roots of the cubic equation x^3 - 4x^2 + 5x - 2 = 0?",
+      "options": ["2", "-2", "4", "5"],
+      "correctAnswerIndex": 0,
+      "explanation": "The product of roots for a cubic ax^3 + bx^2 + cx + d = 0 is -d/a = -(-2)/1 = 2."
+    },
+    {
+      "question": "What is the order of the differential equation (d^2y/dx^2)^3 + (dy/dx)^4 + y = 0?",
+      "options": ["2", "3", "4", "1"],
+      "correctAnswerIndex": 0,
+      "explanation": "The order of a differential equation is the order of the highest derivative present, which is d^2y/dx^2 (order 2)."
+    },
+    {
+      "question": "What is the degree of the differential equation (d^2y/dx^2)^3 + (dy/dx)^4 + y = 0?",
+      "options": ["3", "2", "4", "1"],
+      "correctAnswerIndex": 0,
+      "explanation": "The degree of a differential equation is the power of the highest order derivative when expressed in polynomial form, which is 3."
+    },
+    {
+      "question": "A differential equation is called linear if:",
+      "options": ["The dependent variable and its derivatives are of degree 1", "The independent variable is of degree 1", "The order is 1", "It has no constant terms"],
+      "correctAnswerIndex": 0,
+      "explanation": "A differential equation is linear if y and all its derivatives occur to the first power and are not multiplied together."
+    },
+    {
+      "question": "Solve the first-order differential equation dy/dx = 2x. What is the general solution?",
+      "options": ["y = x^2 + C", "y = 2x^2 + C", "y = x^2", "y = 2 + C"],
+      "correctAnswerIndex": 0,
+      "explanation": "Integrating both sides: y = ∫ 2x dx = x^2 + C."
+    },
+    {
+      "question": "Which of the following is the integrating factor (IF) for the linear differential equation dy/dx + Py = Q?",
+      "options": ["e^(∫ P dx)", "e^(∫ Q dx)", "∫ P dx", "e^(P)"],
+      "correctAnswerIndex": 0,
+      "explanation": "The integrating factor for the first-order linear differential equation dy/dx + Py = Q is e^(∫ P dx)."
+    }
+  ],
+  "math-geometry": [
+    {
+      "question": "What is the centroid of a triangle with vertices (x1, y1), (x2, y2), and (x3, y3)?",
+      "options": ["((x1+x2+x3)/3, (y1+y2+y3)/3)", "((x1+x2+x3)/2, (y1+y2+y3)/2)", "(x1+x2+x3, y1+y2+y3)", "(x1*x2*x3, y1*y2*y3)"],
+      "correctAnswerIndex": 0,
+      "explanation": "The centroid coordinates are the averages of the coordinates of the three vertices."
+    },
+    {
+      "question": "What is the eccentricity (e) of a parabola?",
+      "options": ["e = 1", "e < 1", "e > 1", "e = 0"],
+      "correctAnswerIndex": 0,
+      "explanation": "A parabola is defined as having an eccentricity of exactly 1."
+    },
+    {
+      "question": "What is the eccentricity (e) of an ellipse?",
+      "options": ["e < 1", "e = 1", "e > 1", "e = 0"],
+      "correctAnswerIndex": 0,
+      "explanation": "An ellipse has an eccentricity strictly less than 1 (0 <= e < 1)."
+    },
+    {
+      "question": "What is the standard equation of a circle centered at (h, k) with radius r?",
+      "options": ["(x - h)^2 + (y - k)^2 = r^2", "(x + h)^2 + (y + k)^2 = r^2", "x^2 + y^2 = r^2", "(x - h)^2 - (y - k)^2 = r^2"],
+      "correctAnswerIndex": 0,
+      "explanation": "The equation of a circle centered at (h,k) is derived from the distance formula: (x - h)^2 + (y - k)^2 = r^2."
+    },
+    {
+      "question": "What is the dot (scalar) product of two perpendicular vectors?",
+      "options": ["0", "1", "-1", "Product of their magnitudes"],
+      "correctAnswerIndex": 0,
+      "explanation": "For perpendicular vectors, the angle θ is 90°. Since cos(90°) = 0, the dot product A • B = |A||B|cos(θ) = 0."
+    },
+    {
+      "question": "What does the magnitude of the cross product of two vectors, |A × B|, represent geometrically?",
+      "options": ["The area of the parallelogram formed by the vectors", "The volume of the parallelepiped", "The projection of A onto B", "The sum of their lengths"],
+      "correctAnswerIndex": 0,
+      "explanation": "The magnitude of the cross product |A × B| is equal to the area of the parallelogram with sides A and B."
+    },
+    {
+      "question": "What is the scalar triple product [a, b, c] of three vectors equal to?",
+      "options": ["a • (b × c)", "a × (b × c)", "(a • b)c", "a • b + c"],
+      "correctAnswerIndex": 0,
+      "explanation": "The scalar triple product is defined as the dot product of one vector with the cross product of the other two: a • (b × c)."
+    },
+    {
+      "question": "What does the scalar triple product [a, b, c] represent geometrically?",
+      "options": ["The volume of the parallelepiped formed by the three vectors", "The area of the triangle formed by them", "The projection of a onto b", "The length of their sum"],
+      "correctAnswerIndex": 0,
+      "explanation": "Geometrically, the absolute value of the scalar triple product represents the volume of the parallelepiped spanned by the three vectors."
+    },
+    {
+      "question": "If three vectors a, b, and c are coplanar, then their scalar triple product [a, b, c] is:",
+      "options": ["0", "1", "-1", "Infinite"],
+      "correctAnswerIndex": 0,
+      "explanation": "If the vectors are coplanar, they lie in the same plane, so the volume of the parallelepiped they span is 0. Thus, [a, b, c] = 0."
+    },
+    {
+      "question": "What is the perpendicular distance from the point (x1, y1) to the line ax + by + c = 0?",
+      "options": ["|ax1 + by1 + c| / √(a^2 + b^2)", "|ax1 + by1 + c| / (a^2 + b^2)", "√(ax1^2 + by1^2)", "|ax1 + by1 + c|"],
+      "correctAnswerIndex": 0,
+      "explanation": "The shortest distance is given by the perpendicular distance formula: |ax1 + by1 + c| / √(a^2 + b^2)."
+    }
+  ],
+  "math-trig": [
+    {
+      "question": "Which of the following is the fundamental Pythagorean trigonometric identity?",
+      "options": ["sin^2(θ) + cos^2(θ) = 1", "sin(θ) + cos(θ) = 1", "tan^2(θ) + 1 = cos^2(θ)", "sin^2(θ) - cos^2(θ) = 1"],
+      "correctAnswerIndex": 0,
+      "explanation": "The identity states that for any angle θ, the sum of the squares of sine and cosine is always 1."
+    },
+    {
+      "question": "What is the compound angle formula for cos(A + B)?",
+      "options": ["cos(A)cos(B) - sin(A)sin(B)", "cos(A)cos(B) + sin(A)sin(B)", "sin(A)cos(B) + cos(A)sin(B)", "sin(A)cos(B) - cos(A)sin(B)"],
+      "correctAnswerIndex": 0,
+      "explanation": "The expansion of the cosine of a sum is cos(A+B) = cos(A)cos(B) - sin(A)sin(B)."
+    },
+    {
+      "question": "What is the double angle formula for sin(2θ)?",
+      "options": ["2 sin(θ) cos(θ)", "sin^2(θ) - cos^2(θ)", "2 sin(θ)", "cos^2(θ) - sin^2(θ)"],
+      "correctAnswerIndex": 0,
+      "explanation": "The double-angle identity for sine is sin(2θ) = 2 sin(θ) cos(θ)."
+    },
+    {
+      "question": "What is the principal value range of the inverse sine function, arcsin(x)?",
+      "options": ["[-π/2, π/2]", "[0, π]", "(-π/2, π/2)", "[-π, π]"],
+      "correctAnswerIndex": 0,
+      "explanation": "The principal values of arcsin(x) are restricted to the closed interval [-π/2, π/2] to make it a one-to-one function."
+    },
+    {
+      "question": "What is the principal value range of the inverse cosine function, arccos(x)?",
+      "options": ["[0, π]", "[-π/2, π/2]", "(0, π)", "[-π, π]"],
+      "correctAnswerIndex": 0,
+      "explanation": "The range of principal values of arccos(x) is [0, π]."
+    },
+    {
+      "question": "What is the value of sin(π/6) (sin 30 degrees)?",
+      "options": ["1/2", "√3/2", "1/√2", "1"],
+      "correctAnswerIndex": 0,
+      "explanation": "The sine of 30 degrees (π/6 radians) is exactly 1/2."
+    },
+    {
+      "question": "What is the value of cos(π/3) (cos 60 degrees)?",
+      "options": ["1/2", "√3/2", "1/√2", "0"],
+      "correctAnswerIndex": 0,
+      "explanation": "The cosine of 60 degrees (π/3 radians) is exactly 1/2."
+    },
+    {
+      "question": "What is the value of tan(π/4) (tan 45 degrees)?",
+      "options": ["1", "0", "√3", "1/√3"],
+      "correctAnswerIndex": 0,
+      "explanation": "The tangent of 45 degrees (π/4 radians) is exactly 1."
+    },
+    {
+      "question": "State the Law of Sines for a triangle ABC with sides a, b, c opposite to angles A, B, C.",
+      "options": ["a/sin(A) = b/sin(B) = c/sin(C)", "a*sin(A) = b*sin(B) = c*sin(C)", "a/cos(A) = b/cos(B) = c/cos(C)", "a^2 = b^2 + c^2"],
+      "correctAnswerIndex": 0,
+      "explanation": "The Law of Sines states that the ratio of the length of a side to the sine of its opposite angle is constant for all three sides."
+    },
+    {
+      "question": "State the Law of Cosines for finding side 'a' in a triangle.",
+      "options": ["a^2 = b^2 + c^2 - 2bc cos(A)", "a^2 = b^2 + c^2 + 2bc cos(A)", "a^2 = b^2 - c^2", "a = b + c - 2cos(A)"],
+      "correctAnswerIndex": 0,
+      "explanation": "The Law of Cosines states that a^2 = b^2 + c^2 - 2bc cos(A), generalizing the Pythagorean theorem."
+    }
+  ],
+  "math-calculus": [
+    {
+      "question": "What is the derivative of x^n with respect to x?",
+      "options": ["n * x^(n - 1)", "x^(n + 1) / (n + 1)", "n * x^n", "x^(n - 1)"],
+      "correctAnswerIndex": 0,
+      "explanation": "According to the power rule of differentiation, d/dx (x^n) = n * x^(n-1)."
+    },
+    {
+      "question": "What does the first derivative dy/dx evaluated at a point represent geometrically?",
+      "options": ["The slope of the tangent line to the curve at that point", "The area under the curve", "The length of the curve", "The curvature"],
+      "correctAnswerIndex": 0,
+      "explanation": "Geometrically, the derivative f'(x) represents the slope of the line tangent to the graph of f at the point."
+    },
+    {
+      "question": "If f(x) has a local extremum (minimum or maximum) at x = c and f is differentiable at c, then f'(c) is:",
+      "options": ["0", "1", "Undefined", "Infinite"],
+      "correctAnswerIndex": 0,
+      "explanation": "According to Fermat's Theorem on stationary points, the derivative of a function must vanish at local extrema: f'(c) = 0."
+    },
+    {
+      "question": "What is the derivative of ln(x) with respect to x?",
+      "options": ["1/x", "e^x", "x", "-1/x^2"],
+      "correctAnswerIndex": 0,
+      "explanation": "The derivative of the natural log function is d/dx (ln x) = 1/x."
+    },
+    {
+      "question": "Evaluate the indefinite integral: ∫ cos(x) dx.",
+      "options": ["sin(x) + C", "-sin(x) + C", "cos(x) + C", "tan(x) + C"],
+      "correctAnswerIndex": 0,
+      "explanation": "The derivative of sin(x) is cos(x), so f(x) = sin(x) + C is the antiderivative."
+    },
+    {
+      "question": "Evaluate the indefinite integral: ∫ sin(x) dx.",
+      "options": ["-cos(x) + C", "cos(x) + C", "sin(x) + C", "-sin(x) + C"],
+      "correctAnswerIndex": 0,
+      "explanation": "The derivative of -cos(x) is sin(x), so ∫ sin(x) dx = -cos(x) + C."
+    },
+    {
+      "question": "What is the derivative of e^x with respect to x?",
+      "options": ["e^x", "x * e^(x - 1)", "ln(x)", "e^(x - 1)"],
+      "correctAnswerIndex": 0,
+      "explanation": "The natural exponential function is its own derivative: d/dx (e^x) = e^x."
+    },
+    {
+      "question": "Rolle's Theorem states that if a function f is continuous on [a,b], differentiable on (a,b), and f(a) = f(b), then there exists c in (a,b) such that:",
+      "options": ["f'(c) = 0", "f(c) = 0", "f'(c) = (f(b) - f(a)) / (b - a)", "f'(c) = 1"],
+      "correctAnswerIndex": 0,
+      "explanation": "Rolle's theorem guarantees at least one point in the open interval where the tangent is horizontal (slope f'(c) = 0)."
+    },
+    {
+      "question": "State the Lagrange's Mean Value Theorem result for f'(c) under standard continuity/differentiability on [a, b].",
+      "options": ["(f(b) - f(a)) / (b - a)", "0", "f(b) - f(a)", "1"],
+      "correctAnswerIndex": 0,
+      "explanation": "The Mean Value Theorem states there exists c in (a,b) where the instantaneous rate of change f'(c) equals the average rate of change: (f(b) - f(a)) / (b - a)."
+    },
+    {
+      "question": "What is the partial derivative with respect to x of the function f(x, y) = x^2 * y?",
+      "options": ["2xy", "x^2", "y", "2x + y"],
+      "correctAnswerIndex": 0,
+      "explanation": "Differentiating with respect to x while treating y as a constant: ∂f/∂x = d/dx(x^2) * y = 2xy."
+    }
+  ],
+  "math-combinatorics": [
+    {
+      "question": "What is the formula to calculate permutations, nPr?",
+      "options": ["n! / (n - r)!", "n! / r!", "n! / (r! * (n - r)!)", "n^r"],
+      "correctAnswerIndex": 0,
+      "explanation": "Permutations represent the number of ways to arrange r elements chosen from n: nPr = n! / (n - r)!."
+    },
+    {
+      "question": "What is the formula to calculate combinations, nCr?",
+      "options": ["n! / (r! * (n - r)!)", "n! / (n - r)!", "n! / r!", "r! / (n - r)!"],
+      "correctAnswerIndex": 0,
+      "explanation": "Combinations represent selection without order: nCr = n! / (r! * (n - r)!)."
+    },
+    {
+      "question": "What is the mathematical relation between nPr and nCr?",
+      "options": ["nPr = r! * nCr", "nCr = r! * nPr", "nPr = nCr / r!", "nPr = r * nCr"],
+      "correctAnswerIndex": 0,
+      "explanation": "Dividing the permutation formula by r! gives the combination formula, so nPr = r! * nCr."
+    },
+    {
+      "question": "What is the value of 5! (5 factorial)?",
+      "options": ["120", "24", "60", "720"],
+      "correctAnswerIndex": 0,
+      "explanation": "5! = 5 * 4 * 3 * 2 * 1 = 120."
+    },
+    {
+      "question": "What is the value of 0!?",
+      "options": ["1", "0", "Undefined", "-1"],
+      "correctAnswerIndex": 0,
+      "explanation": "By mathematical convention and definition in combinatorics, 0! is equal to 1."
+    },
+    {
+      "question": "What is the value of nC0 for any positive integer n?",
+      "options": ["1", "n", "0", "n!"],
+      "correctAnswerIndex": 0,
+      "explanation": "nC0 = n! / (0! * (n - 0)!) = n! / n! = 1."
+    },
+    {
+      "question": "What is the value of nCn for any positive integer n?",
+      "options": ["1", "n", "0", "n!"],
+      "correctAnswerIndex": 0,
+      "explanation": "nCn = n! / (n! * (n - n)!) = n! / n! = 1. There is only 1 way to select all n elements."
+    },
+    {
+      "question": "In how many ways can 3 students be seated on a bench with 3 seats?",
+      "options": ["6", "3", "9", "1"],
+      "correctAnswerIndex": 0,
+      "explanation": "The number of arrangements is 3! = 3 * 2 * 1 = 6."
+    },
+    {
+      "question": "The Principle of Mathematical Induction proves a statement holds for all natural numbers by showing it holds for base case n=1 and:",
+      "options": ["Proving that if it holds for n=k, it must hold for n=k+1", "Proving it holds for all primes", "Proving it holds for n=0", "Proving it holds for n=10"],
+      "correctAnswerIndex": 0,
+      "explanation": "The inductive step establishes that the truth of the statement at n = k implies its truth at n = k + 1."
+    },
+    {
+      "question": "What is the value of 5C2?",
+      "options": ["10", "20", "5", "15"],
+      "correctAnswerIndex": 0,
+      "explanation": "5C2 = 5! / (2! * 3!) = (5 * 4) / 2 = 10."
+    }
+  ],
+  "math-stats": [
+    {
+      "question": "If the probability of an event occurring is P(E), what is the probability of the event not occurring?",
+      "options": ["1 - P(E)", "P(E)", "0", "1 / P(E)"],
+      "correctAnswerIndex": 0,
+      "explanation": "The sum of the probabilities of an event and its complement is always 1, so P(E') = 1 - P(E)."
+    },
+    {
+      "question": "For two independent events A and B, what is the joint probability P(A ∩ B)?",
+      "options": ["P(A) * P(B)", "P(A) + P(B)", "P(A) + P(B) - P(A ∪ B)", "P(A) / P(B)"],
+      "correctAnswerIndex": 0,
+      "explanation": "For independent events, the probability of both occurring is the product of their individual probabilities."
+    },
+    {
+      "question": "What is the median of the following dataset: 5, 8, 12, 15, 22?",
+      "options": ["12", "10", "15", "12.4"],
+      "correctAnswerIndex": 0,
+      "explanation": "Since the dataset is sorted, the middle value (3rd out of 5 elements) is the median, which is 12."
+    },
+    {
+      "question": "The sum of the probabilities of all possible mutually exclusive events in a sample space is:",
+      "options": ["1", "0", "Infinity", "Variable"],
+      "correctAnswerIndex": 0,
+      "explanation": "The total probability of all disjoint events spanning the sample space is exactly 1."
+    },
+    {
+      "question": "What is the formula for calculating the arithmetic mean of n values?",
+      "options": ["Sum of values divided by n", "Product of values divided by n", "Middle value", "Most frequent value"],
+      "correctAnswerIndex": 0,
+      "explanation": "The arithmetic mean is the sum of all elements in the dataset divided by the total number of elements n."
+    },
+    {
+      "question": "In statistics, the standard deviation represents:",
+      "options": ["The measure of the dispersion or spread of a dataset", "The average value", "The middle value", "The difference between max and min"],
+      "correctAnswerIndex": 0,
+      "explanation": "Standard deviation measures how spread out the values in a dataset are around the arithmetic mean."
+    },
+    {
+      "question": "What is the area of a circle with radius r?",
+      "options": ["π * r^2", "2 * π * r", "π * d", "4/3 * π * r^3"],
+      "correctAnswerIndex": 0,
+      "explanation": "The area of a circle is calculated by the formula A = πr^2."
+    },
+    {
+      "question": "What is the volume of a sphere of radius r?",
+      "options": ["4/3 * π * r^3", "π * r^2", "2 * π * r", "4 * π * r^2"],
+      "correctAnswerIndex": 0,
+      "explanation": "The volume of a sphere is given by the formula V = (4/3)πr^3."
+    },
+    {
+      "question": "What is the mode of a dataset?",
+      "options": ["The value that appears most frequently", "The arithmetic average", "The middle value", "The dispersion factor"],
+      "correctAnswerIndex": 0,
+      "explanation": "The mode is defined as the value or values that occur with the highest frequency in a dataset."
+    },
+    {
+      "question": "What is the probability of rolling a 4 on a fair six-sided die?",
+      "options": ["1/6", "4/6", "1/4", "0"],
+      "correctAnswerIndex": 0,
+      "explanation": "There is 1 favorable outcome (rolling a 4) out of 6 possible outcomes, so the probability is 1/6."
+    }
+  ],
+  "science-physics-electro": [
+    {
+      "question": "What is the mathematical expression for Coulomb's Law?",
+      "options": ["F = k * q1 * q2 / r^2", "F = k * q1 * q2 / r", "F = m * a", "F = G * m1 * m2 / r^2"],
+      "correctAnswerIndex": 0,
+      "explanation": "Coulomb's Law states that the electrostatic force between two charges is proportional to their product and inversely proportional to the square of the distance between them."
+    },
+    {
+      "question": "According to Ohm's Law, what is the relation between voltage (V), current (I), and resistance (R)?",
+      "options": ["V = I * R", "V = I / R", "V = I^2 * R", "R = V * I"],
+      "correctAnswerIndex": 0,
+      "explanation": "Ohm's Law states V = IR, meaning voltage equals current multiplied by resistance."
+    },
+    {
+      "question": "What is the SI unit of electric charge?",
+      "options": ["Coulomb", "Ampere", "Volt", "Ohm"],
+      "correctAnswerIndex": 0,
+      "explanation": "The Coulomb (C) is the SI unit of electric charge."
+    },
+    {
+      "question": "What is the SI unit of electrical capacitance?",
+      "options": ["Farad", "Coulomb", "Henry", "Tesla"],
+      "correctAnswerIndex": 0,
+      "explanation": "Capacitance is measured in Farads (F), representing charge storage per unit voltage."
+    },
+    {
+      "question": "The electric field inside a perfectly conducting sphere is:",
+      "options": ["Zero", "Constant and non-zero", "Infinite", "Variable"],
+      "correctAnswerIndex": 0,
+      "explanation": "By Gauss's Law, since all charge resides on the outer surface of a conductor, the electric field inside is zero."
+    },
+    {
+      "question": "Which of the following equations represents Gauss's Law for electrostatics?",
+      "options": ["Φ = q / ε0", "V = IR", "F = qE", "E = -dV/dx"],
+      "correctAnswerIndex": 0,
+      "explanation": "Gauss's Law states that the net electric flux Φ through any closed surface is equal to the net charge enclosed divided by the permittivity of free space ε0."
+    },
+    {
+      "question": "Which law states that the induced electromotive force (EMF) is equal to the negative rate of change of magnetic flux?",
+      "options": ["Faraday's Law of Induction", "Lenz's Law", "Ampere's Law", "Coulomb's Law"],
+      "correctAnswerIndex": 0,
+      "explanation": "Faraday's Law of Induction states that EMF = -dΦ_B/dt."
+    },
+    {
+      "question": "Lenz's Law is a consequence of which conservation law?",
+      "options": ["Conservation of Energy", "Conservation of Charge", "Conservation of Momentum", "Conservation of Mass"],
+      "correctAnswerIndex": 0,
+      "explanation": "Lenz's Law states that induced current opposes the change that created it, representing the conservation of energy."
+    },
+    {
+      "question": "Kirchhoff's Current Law (junction rule) is based on the conservation of:",
+      "options": ["Electric Charge", "Energy", "Momentum", "Mass"],
+      "correctAnswerIndex": 0,
+      "explanation": "Kirchhoff's Current Law states that total current entering a junction equals current leaving it, conserving electric charge."
+    },
+    {
+      "question": "Kirchhoff's Voltage Law (loop rule) is based on the conservation of:",
+      "options": ["Energy", "Electric Charge", "Momentum", "Magnetic Flux"],
+      "correctAnswerIndex": 0,
+      "explanation": "Kirchhoff's Voltage Law states that sum of potentials around a closed loop is zero, representing conservation of energy."
+    }
+  ],
+  "science-physics-optics": [
+    {
+      "question": "What is the focal length of a flat plane mirror?",
+      "options": ["Infinity", "Zero", "10 cm", "Depends on mirror size"],
+      "correctAnswerIndex": 0,
+      "explanation": "Since a plane mirror has no curvature, its radius of curvature is infinite, making its focal length infinite."
+    },
+    {
+      "question": "What wave phenomenon causes a straw in a glass of water to appear bent at the water surface?",
+      "options": ["Refraction", "Reflection", "Diffraction", "Polarization"],
+      "correctAnswerIndex": 0,
+      "explanation": "Refraction is the bending of light as it passes from one medium (air) to another of different optical density (water)."
+    },
+    {
+      "question": "What type of lens is used to correct myopia (nearsightedness)?",
+      "options": ["Concave lens", "Convex lens", "Bifocal lens", "Cylindrical lens"],
+      "correctAnswerIndex": 0,
+      "explanation": "Myopia requires a diverging (concave) lens to diverge incoming rays so that they focus on the retina rather than in front of it."
+    },
+    {
+      "question": "What type of lens is used to correct hypermetropia (farsightedness)?",
+      "options": ["Convex lens", "Concave lens", "Cylindrical lens", "Bifocal lens"],
+      "correctAnswerIndex": 0,
+      "explanation": "Hypermetropia requires a converging (convex) lens to bring the focus forward onto the retina."
+    },
+    {
+      "question": "The speed of sound in dry air at 20°C is approximately:",
+      "options": ["343 m/s", "1500 m/s", "3 * 10^8 m/s", "120 m/s"],
+      "correctAnswerIndex": 0,
+      "explanation": "Sound travels at about 343 metres per second in air at standard room temperature."
+    },
+    {
+      "question": "What is Snell's Law of refraction?",
+      "options": ["n1 * sin(θ1) = n2 * sin(θ2)", "n1 * cos(θ1) = n2 * cos(θ2)", "n1 / sin(θ1) = n2 / sin(θ2)", "sin(θ1) + sin(θ2) = n"],
+      "correctAnswerIndex": 0,
+      "explanation": "Snell's Law relates the indices of refraction and angles: n1 * sin(θ1) = n2 * sin(θ2)."
+    },
+    {
+      "question": "Which of the following optical phenomena is responsible for the rainbow colors seen on CD surfaces or soap bubbles?",
+      "options": ["Interference", "Refraction", "Scattering", "Total Internal Reflection"],
+      "correctAnswerIndex": 0,
+      "explanation": "Light waves reflected from the thin films interfere with each other, producing constructive interference for specific colors."
+    },
+    {
+      "question": "What is the critical angle of reflection related to?",
+      "options": ["Total Internal Reflection", "Diffraction limit", "Polarization angle", "Focal point"],
+      "correctAnswerIndex": 0,
+      "explanation": "When light passes from a denser to a rarer medium at an angle greater than the critical angle, it undergoes total internal reflection."
+    },
+    {
+      "question": "The bending of light waves around corners or obstacles is called:",
+      "options": ["Diffraction", "Refraction", "Reflection", "Dispersion"],
+      "correctAnswerIndex": 0,
+      "explanation": "Diffraction describes the spreading or bending of waves when they meet an obstacle or pass through a small opening."
+    },
+    {
+      "question": "Which wave property restricts light waves to a single plane of vibration?",
+      "options": ["Polarization", "Interference", "Diffraction", "Refraction"],
+      "correctAnswerIndex": 0,
+      "explanation": "Polarization is the process of filtering transverse light waves so that they vibrate in only one direction."
+    }
+  ],
+  "science-physics-motion": [
+    {
+      "question": "Which of Newton's Laws of Motion is also known as the Law of Inertia?",
+      "options": ["First Law", "Second Law", "Third Law", "Law of Gravitation"],
+      "correctAnswerIndex": 0,
+      "explanation": "Newton's First Law states that an object at rest or in uniform motion remains in that state unless acted on by an external net force."
+    },
+    {
+      "question": "What is the formula for force according to Newton's Second Law?",
+      "options": ["F = ma", "F = m/a", "F = mv", "F = m + a"],
+      "correctAnswerIndex": 0,
+      "explanation": "Newton's Second Law defines force as mass multiplied by acceleration."
+    },
+    {
+      "question": "What is the acceleration due to gravity on the surface of the Earth?",
+      "options": ["9.8 m/s^2", "1.6 m/s^2", "32 m/s^2", "9.8 N"],
+      "correctAnswerIndex": 0,
+      "explanation": "The average acceleration due to gravity on Earth is approximately 9.8 metres per second squared."
+    },
+    {
+      "question": "If an object is thrown vertically upwards, what is its velocity at its highest point?",
+      "options": ["Zero", "9.8 m/s", "Equal to its initial velocity", "Infinite"],
+      "correctAnswerIndex": 0,
+      "explanation": "At peak height, the object stops moving upwards before descending, so its instantaneous velocity is zero."
+    },
+    {
+      "question": "The conservation of linear momentum states that in the absence of external forces, the total momentum of a system:",
+      "options": ["Remains constant", "Becomes zero", "Increases", "Fluctuates"],
+      "correctAnswerIndex": 0,
+      "explanation": "Without external net forces, the initial momentum of a system equals the final momentum (it is conserved)."
+    },
+    {
+      "question": "What is the formula to calculate kinetic energy (KE) of an object?",
+      "options": ["1/2 * m * v^2", "m * g * h", "m * v", "F * d"],
+      "correctAnswerIndex": 0,
+      "explanation": "Kinetic energy is energy of motion, given by f = 1/2 mv^2."
+    },
+    {
+      "question": "What is the formula to calculate gravitational potential energy (PE)?",
+      "options": ["m * g * h", "1/2 * m * v^2", "F * d", "m * a"],
+      "correctAnswerIndex": 0,
+      "explanation": "Potential energy due to height is calculated by mass * gravity * height."
+    },
+    {
+      "question": "State Newton's Law of Universal Gravitation formula.",
+      "options": ["F = G * m1 * m2 / r^2", "F = g * m1 * m2 / r", "F = m * g", "F = G * m1 * m2 * r^2"],
+      "correctAnswerIndex": 0,
+      "explanation": "The gravitational force is F = G * m1 * m2 / r^2 where G is the gravitational constant."
+    },
+    {
+      "question": "Hooke's Law of elasticity states that within elastic limits, stress is directly proportional to:",
+      "options": ["Strain", "Force", "Area", "Young's modulus"],
+      "correctAnswerIndex": 0,
+      "explanation": "Hooke's Law states that stress is directly proportional to strain (Stress = E * Strain)."
+    },
+    {
+      "question": "The buoyant force on a submerged body is equal to the weight of the fluid displaced. This is:",
+      "options": ["Archimedes' Principle", "Pascal's Law", "Bernoulli's Principle", "Newton's Law"],
+      "correctAnswerIndex": 0,
+      "explanation": "Archimedes' Principle states that a body immersed in a fluid experiences an upward buoyant force equal to the weight of the displaced fluid."
+    }
+  ],
+  "science-chemistry-metallurgy": [
+    {
+      "question": "Which concentration method is typically preferred for separating sulphide ores from gangue?",
+      "options": ["Froth Flotation", "Hydraulic Washing", "Magnetic Separation", "Leaching"],
+      "correctAnswerIndex": 0,
+      "explanation": "Froth flotation exploits difference in wetting characteristics of ore and gangue with pine oil and water, and is ideal for sulphides."
+    },
+    {
+      "question": "What is the process of heating an ore below its melting point in excess air called?",
+      "options": ["Roasting", "Calcination", "Smelting", "Refining"],
+      "correctAnswerIndex": 0,
+      "explanation": "Roasting is heating sulphide ores strongly in the presence of air to convert them into oxides."
+    },
+    {
+      "question": "What is the process of heating an ore below its melting point in the absence or limited supply of air?",
+      "options": ["Calcination", "Roasting", "Smelting", "Liquation"],
+      "correctAnswerIndex": 0,
+      "explanation": "Calcination heats carbonate or hydrated ores in limited air to remove moisture and carbon dioxide."
+    },
+    {
+      "question": "In the extraction of iron, what flux is added to the blast furnace to remove silica impurities?",
+      "options": ["Limestone (Calcium Carbonate)", "Silica", "Coke", "Alumina"],
+      "correctAnswerIndex": 0,
+      "explanation": "Limestone decomposes to CaO (basic flux) which reacts with acidic SiO2 gangue to form CaSiO3 slag."
+    },
+    {
+      "question": "In the electrolytic refining of copper, the anode is made of:",
+      "options": ["Impure copper", "Pure copper", "Graphite", "Platinum"],
+      "correctAnswerIndex": 0,
+      "explanation": "In electrolytic refining, the impure metal is made the anode and a thin sheet of pure metal is the cathode."
+    },
+    {
+      "question": "What is the main chemical formula of slag formed during iron extraction in a blast furnace?",
+      "options": ["CaSiO3", "FeSiO3", "SiO2", "CaO"],
+      "correctAnswerIndex": 0,
+      "explanation": "The slag is calcium silicate, represented by the chemical formula CaSiO3."
+    },
+    {
+      "question": "Which chemical is used as a collector in the froth flotation process?",
+      "options": ["Sodium ethyl xanthate (or Pine Oil)", "Aniline", "Cresol", "Sodium carbonate"],
+      "correctAnswerIndex": 0,
+      "explanation": "Collectors like pine oil or sodium ethyl xanthate enhance the non-wettability of mineral particles by water."
+    },
+    {
+      "question": "Which extraction process involves dissolving the ore in a suitable chemical reagent to separate gangue?",
+      "options": ["Leaching", "Magnetic separation", "Gravity washing", "Roasting"],
+      "correctAnswerIndex": 0,
+      "explanation": "Leaching is a chemical concentration method where the ore is treated with a chemical reagent that dissolves ore but not gangue."
+    },
+    {
+      "question": "The method of refining volatile metals like Zinc and Mercury by vaporizing and condensing them is:",
+      "options": ["Distillation", "Liquation", "Zone refining", "Electrolysis"],
+      "correctAnswerIndex": 0,
+      "explanation": "Distillation is used for refining low-boiling volatile metals, vaporizing them away from high-boiling impurities."
+    },
+    {
+      "question": "Which refining process is based on the principle that impurities are more soluble in the melt than in the solid state?",
+      "options": ["Zone Refining", "Liquation", "Poling", "Electrolytic refining"],
+      "correctAnswerIndex": 0,
+      "explanation": "Zone refining (fractional crystallization) relies on the fact that impurities remain in the molten zone, producing highly pure semiconductors."
+    }
+  ],
+  "science-chemistry-bonding": [
+    {
+      "question": "According to VSEPR theory, what is the geometry of a Xenon Tetrafluoride (XeF4) molecule?",
+      "options": ["Square Planar", "Tetrahedral", "Octalhedral", "Linear"],
+      "correctAnswerIndex": 0,
+      "explanation": "XeF4 has 4 bonding pairs and 2 lone pairs, resulting in sp3d2 hybridization and a square planar geometry."
+    },
+    {
+      "question": "What type of chemical bond involves the complete transfer of electrons from a metal to a non-metal?",
+      "options": ["Ionic bond", "Covalent bond", "Coordinate bond", "Metallic bond"],
+      "correctAnswerIndex": 0,
+      "explanation": "Ionic bonds are formed by electrostatic attraction between ions generated by electron transfer."
+    },
+    {
+      "question": "What group of elements is characterized by a stable completely filled valence shell configuration?",
+      "options": ["Group 18 (Noble Gases)", "Group 17 (Halogens)", "Group 1 (Alkali Metals)", "Group 15 (Pnictogens)"],
+      "correctAnswerIndex": 0,
+      "explanation": "Noble gases have a stable closed-shell configuration (ns2 np6), showing extremely low chemical reactivity."
+    },
+    {
+      "question": "In the coordination compound [Co(NH3)6]Cl3, what is the coordination number of Cobalt?",
+      "options": ["6", "3", "9", "4"],
+      "correctAnswerIndex": 0,
+      "explanation": "Six monodentate ammonia (NH3) ligands are directly coordinated to the Cobalt central metal ion."
+    },
+    {
+      "question": "Which hybridization is associated with a tetrahedral molecular geometry, such as in methane (CH4)?",
+      "options": ["sp3", "sp2", "sp", "sp3d"],
+      "correctAnswerIndex": 0,
+      "explanation": "Carbon in CH4 utilizes sp3 hybridization (mixing one s and three p orbitals) to form four tetrahedral bonds."
+    },
+    {
+      "question": "What is the molecular geometry of water (H2O) according to VSEPR theory?",
+      "options": ["Bent (V-shaped)", "Linear", "Tetrahedral", "Trigonal Planar"],
+      "correctAnswerIndex": 0,
+      "explanation": "H2O has 2 bonding pairs and 2 lone pairs of electrons, causing repulsion that bends the molecule into a V-shape."
+    },
+    {
+      "question": "What type of bond is formed by the sharing of a pair of electrons contributed by only one of the bonding atoms?",
+      "options": ["Coordinate (Dative) covalent bond", "Ionic bond", "Metallic bond", "Non-polar covalent bond"],
+      "correctAnswerIndex": 0,
+      "explanation": "A coordinate covalent bond occurs when one atom donates both electrons to form the shared pair."
+    },
+    {
+      "question": "What is the general valence shell configuration of Group 15 (pnictogens) elements?",
+      "options": ["ns2 np3", "ns2 np2", "ns2 np4", "ns2 np5"],
+      "correctAnswerIndex": 0,
+      "explanation": "Group 15 elements (Nitrogen family) have 5 valence electrons in the configuration ns2 np3."
+    },
+    {
+      "question": "Which of the following molecules has a linear molecular shape?",
+      "options": ["CO2", "H2O", "SO2", "NH3"],
+      "correctAnswerIndex": 0,
+      "explanation": "Carbon dioxide has two double bonds and no lone pairs on the carbon atom, resulting in a linear 180° geometry."
+    },
+    {
+      "question": "The electrostatic force of attraction holding metal ions and delocalized free electrons together is a:",
+      "options": ["Metallic bond", "Covalent bond", "Ionic bond", "Hydrogen bond"],
+      "correctAnswerIndex": 0,
+      "explanation": "Metallic bonding is described as an array of positive metal ions immersed in a sea of mobile valence electrons."
+    }
+  ],
+  "science-chemistry-organic": [
+    {
+      "question": "What is the general molecular formula for saturated hydrocarbons (alkanes)?",
+      "options": ["C_n H_(2n+2)", "C_n H_2n", "C_n H_(2n-2)", "C_n H_(2n+1)"],
+      "correctAnswerIndex": 0,
+      "explanation": "Alkanes are saturated open-chain hydrocarbons with the general formula C_n H_(2n+2)."
+    },
+    {
+      "question": "What functional group defines an alcohol?",
+      "options": ["-OH (Hydroxyl)", "-CHO (Formyl)", "-COOH (Carboxyl)", "-CO- (Carbonyl)"],
+      "correctAnswerIndex": 0,
+      "explanation": "Alcohols contain the hydroxyl (-OH) group bonded to a carbon atom."
+    },
+    {
+      "question": "What is the IUPAC name of the simplest carboxylic acid, HCOOH?",
+      "options": ["Methanoic acid", "Ethanoic acid", "Propanoic acid", "Formic acid"],
+      "correctAnswerIndex": 0,
+      "explanation": "HCOOH has one carbon atom. Its IUPAC name is methanoic acid; Formic acid is its common name."
+    },
+    {
+      "question": "Which biomolecule is the primary carrier of genetic information in living systems?",
+      "options": ["DNA", "RNA", "Protein", "Glycogen"],
+      "correctAnswerIndex": 0,
+      "explanation": "Deoxyribonucleic acid (DNA) stores the genetic code for development and functioning of organisms."
+    },
+    {
+      "question": "What is the general formula for alkenes (hydrocarbons with one double bond)?",
+      "options": ["C_n H_2n", "C_n H_(2n+2)", "C_n H_(2n-2)", "C_n H_(2n+1)"],
+      "correctAnswerIndex": 0,
+      "explanation": "Alkenes are unsaturated hydrocarbons containing a carbon-carbon double bond, represented by C_n H_2n."
+    },
+    {
+      "question": "What is the IUPAC name for common drinking alcohol, CH3CH2OH?",
+      "options": ["Ethanol", "Methanol", "Propanol", "Ethanal"],
+      "correctAnswerIndex": 0,
+      "explanation": "CH3CH2OH contains two carbon atoms and a hydroxyl group, giving it the IUPAC name ethanol."
+    },
+    {
+      "question": "Which functional group is present in aldehydes?",
+      "options": ["-CHO", "-COOH", "-OH", "-O-"],
+      "correctAnswerIndex": 0,
+      "explanation": "Aldehydes contain a terminal carbonyl group bonded to a hydrogen, represented as -CHO."
+    },
+    {
+      "question": "The monomers that link together to form proteins are:",
+      "options": ["Amino acids", "Nucleotides", "Monosaccharides", "Fatty acids"],
+      "correctAnswerIndex": 0,
+      "explanation": "Proteins are biopolymers made of peptide chains of amino acid monomers."
+    },
+    {
+      "question": "Which of the following is an unsaturated hydrocarbon containing a triple bond?",
+      "options": ["Alkyne", "Alkane", "Alkene", "Alcohol"],
+      "correctAnswerIndex": 0,
+      "explanation": "Alkynes are unsaturated hydrocarbons that contain at least one carbon-carbon triple bond (C_n H_(2n-2))."
+    },
+    {
+      "question": "What is the main functional group present in carboxylic acids?",
+      "options": ["-COOH", "-COOR", "-CHO", "-OH"],
+      "correctAnswerIndex": 0,
+      "explanation": "Carboxylic acids are organic compounds characterized by the carboxyl (-COOH) functional group."
+    }
+  ],
+  "science-chemistry-physical": [
+    {
+      "question": "Which equation calculates the cell potential under non-standard conditions?",
+      "options": ["Nernst Equation", "Arrhenius Equation", "Gibbs-Helmholtz Equation", "Van 't Hoff Equation"],
+      "correctAnswerIndex": 0,
+      "explanation": "The Nernst Equation relates cell potential to reaction quotient and temperature: E = E° - (RT/nF)lnQ."
+    },
+    {
+      "question": "What is the pH of a neutral aqueous solution at 25°C?",
+      "options": ["7", "0", "14", "1"],
+      "correctAnswerIndex": 0,
+      "explanation": "At 25°C, neutral water has [H+] = 10^-7 M, corresponding to pH = -log(10^-7) = 7."
+    },
+    {
+      "question": "For an exothermic reaction at equilibrium, what happens if the temperature is increased?",
+      "options": ["Equilibrium shifts in the backward direction", "Equilibrium shifts in the forward direction", "Equilibrium constant increases", "No change occurs"],
+      "correctAnswerIndex": 0,
+      "explanation": "By Le Chatelier's principle, adding heat shifts the equilibrium in the endothermic direction. For an exothermic reaction, this is the backward direction."
+    },
+    {
+      "question": "What is the unit of rate constant for a first-order chemical reaction?",
+      "options": ["s^-1", "L * mol^-1 * s^-1", "mol * L^-1 * s^-1", "L^2 * mol^-2 * s^-1"],
+      "correctAnswerIndex": 0,
+      "explanation": "For first order, Rate = k[A] => mol L^-1 s^-1 = k (mol L^-1) => k has unit s^-1."
+    },
+    {
+      "question": "What is the unit of rate constant for a second-order chemical reaction?",
+      "options": ["L * mol^-1 * s^-1", "s^-1", "mol * L^-1 * s^-1", "L^2 * mol^-2 * s^-1"],
+      "correctAnswerIndex": 0,
+      "explanation": "For second order, Rate = k[A]^2 => mol L^-1 s^-1 = k (mol L^-1)^2 => k has unit L mol^-1 s^-1."
+    },
+    {
+      "question": "According to the Arrhenius equation, the rate constant k depends on temperature T through which factor?",
+      "options": ["e^(-Ea / RT)", "e^(Ea / RT)", "Ea / RT", "ln(Ea)"],
+      "correctAnswerIndex": 0,
+      "explanation": "The Arrhenius equation is k = A * e^(-Ea/RT), showing exponential dependence on activation energy Ea and temperature."
+    },
+    {
+      "question": "Properties of solutions that depend only on the number of solute particles and not their identity are called:",
+      "options": ["Colligative properties", "Thermodynamic properties", "Additive properties", "Constitutive properties"],
+      "correctAnswerIndex": 0,
+      "explanation": "Colligative properties (like osmotic pressure, boiling point elevation) depend strictly on the concentration/number of solute particles."
+    },
+    {
+      "question": "Which of the following is NOT a colligative property?",
+      "options": ["Vapor pressure of pure solvent", "Osmotic pressure", "Boiling point elevation", "Freezing point depression"],
+      "correctAnswerIndex": 0,
+      "explanation": "Osmotic pressure, boiling elevation, and freezing depression are colligative properties. Vapor pressure of pure solvent is a characteristic physical property."
+    },
+    {
+      "question": "According to the First Law of Thermodynamics, the change in internal energy (ΔU) is equal to:",
+      "options": ["q + w", "q - w", "T * ΔS", "ΔH - T * ΔS"],
+      "correctAnswerIndex": 0,
+      "explanation": "The first law states that internal energy changes by heat added to system plus work done on it: ΔU = q + w."
+    },
+    {
+      "question": "A reaction is spontaneous at all temperatures if:",
+      "options": ["ΔH < 0 and ΔS > 0", "ΔH > 0 and ΔS < 0", "ΔH < 0 and ΔS < 0", "ΔH > 0 and ΔS > 0"],
+      "correctAnswerIndex": 0,
+      "explanation": "Gibbs free energy change ΔG = ΔH - TΔS. If ΔH is negative and ΔS is positive, ΔG is always negative (spontaneous)."
+    }
+  ],
+  "science-biology-genetics": [
+    {
+      "question": "What is the expected phenotypic ratio of a Mendelian F2 generation in a monohybrid cross?",
+      "options": ["3:1", "1:2:1", "9:3:3:1", "1:1"],
+      "correctAnswerIndex": 0,
+      "explanation": "A monohybrid cross of heterozygous individuals yields 3 dominant phenotypes to 1 recessive phenotype in the F2 generation."
+    },
+    {
+      "question": "Which process produces two identical copies of double-stranded DNA before cell division?",
+      "options": ["DNA Replication", "Transcription", "Translation", "Mitosis"],
+      "correctAnswerIndex": 0,
+      "explanation": "DNA replication synthesizes two identical daughter DNA molecules using the parent strands as templates."
+    },
+    {
+      "question": "According to Darwin's theory of evolution, what is the primary mechanism of adaptation?",
+      "options": ["Natural Selection", "Use and disuse of organs", "Genetic drift", "Mutation pressure"],
+      "correctAnswerIndex": 0,
+      "explanation": "Darwin identified natural selection—where organisms with traits better suited to their environment survive and reproduce—as the main driver of adaptation."
+    },
+    {
+      "question": "In humans, which combination of sex chromosomes determines male gender?",
+      "options": ["XY", "XX", "XO", "XXY"],
+      "correctAnswerIndex": 0,
+      "explanation": "Males inherit one X chromosome and one Y chromosome (XY). Females inherit two X chromosomes (XX)."
+    },
+    {
+      "question": "The synthesis of an RNA molecule from a DNA template is called:",
+      "options": ["Transcription", "Translation", "Replication", "Translocation"],
+      "correctAnswerIndex": 0,
+      "explanation": "Transcription is the process of copying a segment of DNA into RNA (mRNA) by RNA polymerase."
+    },
+    {
+      "question": "The process of translating the sequence of an mRNA molecule into a sequence of amino acids is called:",
+      "options": ["Translation", "Transcription", "Replication", "Splicing"],
+      "correctAnswerIndex": 0,
+      "explanation": "Translation is the ribosome-mediated synthesis of polypeptide chains based on codons of mRNA."
+    },
+    {
+      "question": "Who is considered the Father of Modern Genetics for his work on pea plants?",
+      "options": ["Gregor Mendel", "Charles Darwin", "Thomas Hunt Morgan", "James Watson"],
+      "correctAnswerIndex": 0,
+      "explanation": "Gregor Mendel discovered the basic principles of heredity (laws of segregation and independent assortment) through breeding pea plants."
+    },
+    {
+      "question": "What is the expected phenotypic ratio in the F2 generation of a Mendelian dihybrid cross?",
+      "options": ["9:3:3:1", "3:1", "1:2:1", "9:7"],
+      "correctAnswerIndex": 0,
+      "explanation": "A dihybrid cross of individuals heterozygous for two traits yields a phenotypic ratio of 9:3:3:1 in the F2 offspring."
+    },
+    {
+      "question": "A sudden permanent change in the nucleotide sequence of a gene or chromosome is called a:",
+      "options": ["Mutation", "Recombination", "Speciation", "Transcription"],
+      "correctAnswerIndex": 0,
+      "explanation": "Mutations are changes in genetic material that introduce variations into the gene pool."
+    },
+    {
+      "question": "The physical or observable expression of a genetic trait is called the:",
+      "options": ["Phenotype", "Genotype", "Allele", "Locus"],
+      "correctAnswerIndex": 0,
+      "explanation": "Phenotype refers to the physical observable traits of an organism, while genotype refers to the genetic makeup."
+    }
+  ],
+  "science-biology-cell": [
+    {
+      "question": "Which organelle is known as the powerhouse of the cell due to its role in ATP synthesis?",
+      "options": ["Mitochondrion", "Nucleus", "Ribosome", "Chloroplast"],
+      "correctAnswerIndex": 0,
+      "explanation": "Mitochondria convert oxygen and nutrients into adenosine triphosphate (ATP) during aerobic cellular respiration."
+    },
+    {
+      "question": "What is the primary structural difference between prokaryotic and eukaryotic cells?",
+      "options": ["Eukaryotes possess a defined nucleus and membrane-bound organs", "Prokaryotes contain a cell wall, eukaryotes do not", "Eukaryotes lack ribosomes", "Prokaryotes are always multicellular"],
+      "correctAnswerIndex": 0,
+      "explanation": "Eukaryotes contain genetic material enclosed within a nuclear envelope and have membrane-bound organelles. Prokaryotes lack these."
+    },
+    {
+      "question": "Which plant tissue consists of actively dividing cells responsible for primary and secondary growth?",
+      "options": ["Meristematic tissue", "Parenchyma", "Sclerenchyma", "Xylem"],
+      "correctAnswerIndex": 0,
+      "explanation": "Meristematic tissues consist of undifferentiated cells capable of active and continuous division."
+    },
+    {
+      "question": "Which plant tissue is responsible for transporting water and dissolved minerals from roots to leaves?",
+      "options": ["Xylem", "Phloem", "Parenchyma", "Collenchyma"],
+      "correctAnswerIndex": 0,
+      "explanation": "Xylem is the vascular tissue responsible for unidirectional transport of water and inorganic nutrients upwards."
+    },
+    {
+      "question": "Which plant tissue is responsible for transporting organic nutrients (food/sucrose) from leaves to other parts?",
+      "options": ["Phloem", "Xylem", "Epidermis", "Sclerenchyma"],
+      "correctAnswerIndex": 0,
+      "explanation": "Phloem is the vascular tissue that translocates organic nutrients (photosynthates) bidirectionally throughout the plant."
+    },
+    {
+      "question": "Which organelle is the primary site of photosynthesis in plant cells?",
+      "options": ["Chloroplast", "Mitochondrion", "Ribosome", "Golgi apparatus"],
+      "correctAnswerIndex": 0,
+      "explanation": "Chloroplasts contain chlorophyll pigments that harvest light energy to synthesize carbohydrates from CO2 and water."
+    },
+    {
+      "question": "Which cellular organelle is responsible for synthesizing proteins?",
+      "options": ["Ribosome", "Lysosome", "Mitochondrion", "Endoplasmic reticulum"],
+      "correctAnswerIndex": 0,
+      "explanation": "Ribosomes read mRNA sequences and assemble amino acids into polypeptide chains."
+    },
+    {
+      "question": "Which organelle contains digestive enzymes that break down waste materials and cellular debris?",
+      "options": ["Lysosome", "Ribosome", "Golgi body", "Vacuole"],
+      "correctAnswerIndex": 0,
+      "explanation": "Lysosomes are spherical sacs containing hydrolytic enzymes capable of digesting biomolecules and damaged organelles."
+    },
+    {
+      "question": "What is the primary component of the plant cell wall?",
+      "options": ["Cellulose", "Chitin", "Peptidoglycan", "Starch"],
+      "correctAnswerIndex": 0,
+      "explanation": "Plant cell walls are made of cellulose microfibrils, providing structural support and rigidity."
+    },
+    {
+      "question": "Which process of cell division results in four genetically diverse haploid daughter cells?",
+      "options": ["Meiosis", "Mitosis", "Binary fission", "Budding"],
+      "correctAnswerIndex": 0,
+      "explanation": "Meiosis is a reductional division producing gametes (haploid), introducing genetic variation through crossing over."
+    }
+  ],
+  "science-biology-health": [
+    {
+      "question": "Which of the following is an infectious disease caused by a virus?",
+      "options": ["Influenza", "Tuberculosis", "Malaria", "Diabetes"],
+      "correctAnswerIndex": 0,
+      "explanation": "Influenza is caused by influenza viruses. Tuberculosis is bacterial, malaria is protozoan, and diabetes is a metabolic disorder."
+    },
+    {
+      "question": "Which component of blood is primarily responsible for immune defense against pathogens?",
+      "options": ["White Blood Cells (Leukocytes)", "Red Blood Cells (Erythrocytes)", "Platelets (Thrombocytes)", "Plasma proteins"],
+      "correctAnswerIndex": 0,
+      "explanation": "Leukocytes (WBCs) play key roles in cellular and humoral immunity to defend the body against pathogens."
+    },
+    {
+      "question": "Which blood cell component is crucial for blood clotting at injury sites?",
+      "options": ["Platelets (Thrombocytes)", "Red Blood Cells", "White Blood Cells", "Hemoglobin"],
+      "correctAnswerIndex": 0,
+      "explanation": "Platelets aggregate at injury sites to form a plug, triggering coagulation pathways to stop bleeding."
+    },
+    {
+      "question": "Which cellular component carries oxygen throughout the human body?",
+      "options": ["Red Blood Cells (Erythrocytes)", "White Blood Cells", "Platelets", "Plasma"],
+      "correctAnswerIndex": 0,
+      "explanation": "Erythrocytes contain hemoglobin, an iron-rich protein that binds and transports oxygen."
+    },
+    {
+      "question": "Vaccines stimulate the immune system to produce which protective proteins?",
+      "options": ["Antibodies", "Antigens", "Hormones", "Enzymes"],
+      "correctAnswerIndex": 0,
+      "explanation": "Vaccines introduce weak or inactive antigens, prompting B-cells to produce specific antibodies and memory cells."
+    },
+    {
+      "question": "Which organ in the human body is primary responsible for filtering metabolic waste from blood?",
+      "options": ["Kidney", "Liver", "Lungs", "Heart"],
+      "correctAnswerIndex": 0,
+      "explanation": "Kidneys filter blood to remove nitrogenous wastes, exporting them as urine while maintaining water and electrolyte balance."
+    },
+    {
+      "question": "Which disease is caused by the deficiency of Vitamin C?",
+      "options": ["Scurvy", "Rickets", "Beriberi", "Night blindness"],
+      "correctAnswerIndex": 0,
+      "explanation": "Vitamin C deficiency leads to Scurvy, characterized by bleeding gums and poor wound healing due to impaired collagen synthesis."
+    },
+    {
+      "question": "What hormone is deficient in individuals suffering from Type 1 Diabetes?",
+      "options": ["Insulin", "Glucagon", "Adrenaline", "Thyroxine"],
+      "correctAnswerIndex": 0,
+      "explanation": "Type 1 diabetes occurs when the pancreas produces little or no insulin due to autoimmune destruction of beta cells."
+    },
+    {
+      "question": "Which pathogen causes Malaria?",
+      "options": ["Plasmodium (Protozoan)", "Mycobacterium (Bacteria)", "Influenza (Virus)", "Candida (Fungus)"],
+      "correctAnswerIndex": 0,
+      "explanation": "Malaria is caused by Plasmodium protozoa transmitted through the bites of infected female Anopheles mosquitoes."
+    },
+    {
+      "question": "Tuberculosis (TB) is an infectious disease primarily affecting the lungs, caused by:",
+      "options": ["Mycobacterium tuberculosis (Bacteria)", "Plasmodium (Protozoan)", "Rhinovirus (Virus)", "Aspergillus (Fungus)"],
+      "correctAnswerIndex": 0,
+      "explanation": "Tuberculosis is a bacterial infection caused by Mycobacterium tuberculosis."
+    }
+  ],
+  "science-biology-ecology": [
+    {
+      "question": "What is the term for a community of living organisms interacting with their physical environment?",
+      "options": ["Ecosystem", "Biosphere", "Population", "Biome"],
+      "correctAnswerIndex": 0,
+      "explanation": "An ecosystem consists of all biotic components (organisms) and abiotic components (soil, climate, water) interacting as a system."
+    },
+    {
+      "question": "In an ecological food chain, which group of organisms occupies the first trophic level?",
+      "options": ["Producers (Autotrophs)", "Primary Consumers (Herbivores)", "Secondary Consumers (Carnivores)", "Decomposers"],
+      "correctAnswerIndex": 0,
+      "explanation": "Autotrophs (green plants) produce organic molecules via photosynthesis, forming the base (first trophic level) of food chains."
+    },
+    {
+      "question": "Organisms that feed on dead organic matter and break down complex organic compounds are:",
+      "options": ["Decomposers", "Producers", "Primary Consumers", "Herbivores"],
+      "correctAnswerIndex": 0,
+      "explanation": "Decomposers (fungi and bacteria) break down detritus, recycling nutrients back into the soil."
+    },
+    {
+      "question": "Which of the following is an abiotic factor in an ecosystem?",
+      "options": ["Temperature", "Bacteria", "Plants", "Animals"],
+      "correctAnswerIndex": 0,
+      "explanation": "Abiotic factors are non-living chemical and physical parts of the environment, such as temperature, sunlight, and water."
+    },
+    {
+      "question": "The variety of life forms on Earth or in a particular ecosystem is described as:",
+      "options": ["Biodiversity", "Biomass", "Bioaccumulation", "Biogeography"],
+      "correctAnswerIndex": 0,
+      "explanation": "Biodiversity measures the variety of genes, species, and ecosystems in a given region."
+    },
+    {
+      "question": "What is the primary source of energy entering almost all ecosystems on Earth?",
+      "options": ["Sunlight", "Geothermal heat", "Chemical compounds", "Wind"],
+      "correctAnswerIndex": 0,
+      "explanation": "Solar energy captured by photoautotrophs is the fundamental energy input driving ecosystems."
+    },
+    {
+      "question": "According to Lindeman's 10% Law of energy transfer, how much energy is transferred to the next trophic level?",
+      "options": ["10%", "90%", "50%", "1%"],
+      "correctAnswerIndex": 0,
+      "explanation": "Only about 10% of energy at one trophic level is incorporated into biomass at the next level; the rest is lost as heat or metabolic waste."
+    },
+    {
+      "question": "The gradual process by which ecosystems change and develop over time is called:",
+      "options": ["Ecological Succession", "Eutrophication", "Evolution", "Adaptation"],
+      "correctAnswerIndex": 0,
+      "explanation": "Ecological succession is the progressive series of changes in species composition in a community over time."
+    },
+    {
+      "question": "What environmental phenomenon is caused by excessive nutrient runoff (like nitrates/phosphates) into water bodies?",
+      "options": ["Eutrophication", "Acid Rain", "Bioaccumulation", "Global Warming"],
+      "correctAnswerIndex": 0,
+      "explanation": "Eutrophication is nutrient enrichment leading to algal blooms, oxygen depletion, and severe water quality degradation."
+    },
+    {
+      "question": "Resources that can be replenished naturally over short periods of time are classified as:",
+      "options": ["Renewable resources", "Non-renewable resources", "Exhaustible resources", "Fossil fuels"],
+      "correctAnswerIndex": 0,
+      "explanation": "Renewable resources (such as solar energy, timber, and water) regenerate through natural cycles at rates comparable to their usage."
+    }
+  ]
+}

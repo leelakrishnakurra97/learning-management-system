@@ -1,5 +1,6 @@
 {
-  "name": "eduverse-app",
+  "name": "learning-management-system",
+  "description": "Enterprise-Grade Learning Management System (LMS) with AI Tutoring, Real-Time Live Classrooms, and Dynamic Academic Hierarchy",
   "private": true,
   "version": "0.1.0",
   "type": "module",

@@ -1,228 +1,270 @@
-# 🎓 EduVerse - Enterprise Learning Management System (LMS)
+# 🎓 Learning Management System (LMS) | EduVerse
 
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.6-blue.svg)](https://www.typescriptlang.org/)
 [![React](https://img.shields.io/badge/React-18.3-61dafb.svg)](https://reactjs.org/)
 [![Vite](https://img.shields.io/badge/Vite-5.4-646cff.svg)](https://vitejs.dev/)
-[![Express](https://img.shields.io/badge/Express-4.21-000000.svg)](https://expressjs.com/)
-[![Prisma](https://img.shields.io/badge/Prisma-6.19-2D3748.svg)](https://www.prisma.io/)
-[![TailwindCSS](https://img.shields.io/badge/Tailwind-3.4-38bdf8.svg)](https://tailwindcss.com/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Express](https://img.shields.io/badge/Node.js_/_Express-4.21-000000.svg)](https://expressjs.com/)
+[![Prisma](https://img.shields.io/badge/Prisma_ORM-6.19-2D3748.svg)](https://www.prisma.io/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-336791.svg)](https://www.postgresql.org/)
+[![LiveKit](https://img.shields.io/badge/LiveKit_WebRTC-2.19-00C853.svg)](https://livekit.io/)
+[![Google Gemini API](https://img.shields.io/badge/Google_Gemini_AI-1.5/2.0-8E44AD.svg)](https://ai.google.dev/)
+[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.4-38bdf8.svg)](https://tailwindcss.com/)
+[![Docker](https://img.shields.io/badge/Docker-Supported-2496ED.svg)](https://www.docker.com/)
 
-**EduVerse** is a modern, enterprise-grade, full-stack Learning Management System designed to deliver seamless online education for K-12 and Higher Education institutions. Built with modern web technologies, EduVerse supports dynamic academic hierarchies (Boards, Classes, Subjects, Units, Chapters, Topics), automated progression tracking, interactive video streaming, live classrooms with LiveKit, AI-assisted tutoring powered by Google Gemini API, and role-based access for Students, Teachers, Admins, and Parents.
-
----
-
-## 🌟 Key Features
-
-### 👨‍🎓 1. Student Portal
-- **Adaptive Learning Progression**: Sequential topic unlocking requiring mandatory watch percentages, quiz completion, and assignment submissions.
-- **Video Learning Player**: Built-in video player with duration tracking, position resume, playback history, and DRM metadata support.
-- **Interactive Quizzes**: Real-time quiz attempts with passing score enforcement, timed quizzes, immediate feedback, and review modes.
-- **Assignments & Submissions**: File uploads, submission status tracking, and teacher feedback with grades.
-- **AI Tutor Assistant**: Integrated AI learning companion powered by **Google Gemini API** for 24/7 instant homework help, topic explanations, and study assistance.
-- **Gamification & Analytics**: Experience points (XP), learning streaks, completion rate badges, and personal performance dashboards.
-
-### 👩‍🏫 2. Teacher Portal
-- **Course & Content Management**: Create and structure courses, assign subjects, upload video lessons, notes, and PDF resources.
-- **Quiz & Question Bank Builder**: Dynamic quiz creation with MCQs, true/false, and comprehension questions.
-- **Assignment Grading Desk**: Review student submissions, assign scores, provide individual feedback, and manage pass/fail decisions.
-- **Live Classroom Hosting**: Launch LiveKit-powered real-time interactive video classes with chat, attendee tracking, and whiteboard.
-
-### 🛡️ 3. Admin Portal
-- **Academic Hierarchy Configuration**: Create and manage Boards (e.g., CBSE, ICSE, State), Classes (Grade 1-12), Subjects, Units, Chapters, and Topics.
-- **User & RBAC Management**: Complete role-based access control to manage users, assign custom roles, permissions, and profile parameters.
-- **System Analytics**: Platform-wide metrics on student engagement, course completion, study hours, and subscription activity.
-- **Subscription & Billing**: Package tier management with billing cycles (Monthly, Quarterly, Annually) and payment integration structure.
-
-### 👨‍👩‍👧 4. Parent Portal
-- **Student Performance Monitor**: Real-time progress monitoring across all enrolled subjects.
-- **Attendance & Live Class Reports**: Detailed logs of live class participation and duration.
-- **Gradebook & Reports**: Comprehensive scorecards for quizzes and assignments.
+An **Enterprise-Grade, Full-Stack Learning Management System (LMS)** engineered to power modern K-12 and Higher Education platforms. Featuring a dynamic 6-tier academic curriculum hierarchy, automated sequential topic progression, interactive WebRTC video classrooms with LiveKit, 24/7 AI-assisted homework tutoring powered by **Google Gemini API**, comprehensive quiz engines, and robust 4-role Access Control (Student, Teacher, Admin, Parent).
 
 ---
 
-## 🛠️ Tech Stack & Architecture
+## 🚀 Key Engineering Highlights
 
-### **Frontend**
-- **Framework**: React 18 with TypeScript
-- **Build Tool**: Vite
-- **Styling**: TailwindCSS & PostCSS
-- **State Management**: Zustand
-- **Icons**: Lucide React
-- **WebRTC / Video**: LiveKit Components React (`@livekit/components-react`)
-
-### **Backend**
-- **Runtime & Server**: Node.js, Express.js (TypeScript via `tsx`)
-- **Database & ORM**: PostgreSQL, Prisma ORM 6.19
-- **Authentication**: JWT (JSON Web Tokens), bcryptjs password hashing
-- **Object Storage**: MinIO / AWS S3 SDK (`@aws-sdk/client-s3`)
-- **AI Integrations**: Google Generative AI (`@google/generative-ai` Gemini 1.5/2.0 API) & Pollinations AI
-- **Live Streaming**: LiveKit Server SDK (`livekit-server-sdk`)
-- **Mail Service**: Nodemailer
+- **Full-Stack Type Safety**: Built end-to-end with **TypeScript** across client, server, ORM schema, and API contracts.
+- **Dynamic Academic Hierarchy**: Fully configurable schema modeling `Board ➔ Class ➔ Subject ➔ Unit ➔ Chapter ➔ Topic`.
+- **Automated Progression Engine**: Rules-based locking/unlocking enforcing mandatory video watch percentages, quiz passing scores, and assignment submissions.
+- **Real-Time Live Classrooms**: Low-latency video streaming, participant tracking, live chat, and collaborative whiteboard integrated via **LiveKit WebRTC**.
+- **AI-Powered Learning Assistance**: Context-aware AI homework helper and tutor powered by **Google Gemini API** (`@google/generative-ai`) and Pollinations AI image generation.
+- **Enterprise Security & RBAC**: JWT-based stateless authentication with password hashing (`bcryptjs`) and granular permissions matrix for 4 distinct user personas.
+- **Scalable Media Architecture**: S3/MinIO cloud object storage integration (`@aws-sdk/client-s3`) with pre-signed upload URLs and video watch history tracking.
 
 ---
 
-## 📁 Repository Directory & File Structure
+## 🏛️ System Architecture
 
 ```text
-Final-LMS-Project/
-├── .env.example              # Sample environment configuration file
-├── .gitignore                # Git ignore rules for node_modules, build outputs, environment files
-├── docker-compose.yml        # Docker Compose config for Postgres, MinIO, LiveKit services
-├── eslint.config.js          # ESLint configuration
-├── index.html                # Vite HTML entry point
-├── package.json              # Project dependencies and npm scripts
-├── package-lock.json         # Locked dependency versions
+┌─────────────────────────────────────────────────────────────────────────┐
+│                           Client Layer (React 18 + Vite)                │
+│   [Student Portal]   [Teacher Portal]   [Admin Center]   [Parent View] │
+└────────────────────────────────────┬────────────────────────────────────┘
+                                     │ HTTP / REST APIs + WebSockets
+┌────────────────────────────────────▼────────────────────────────────────┐
+│                    Backend API Server (Express + TypeScript)            │
+│   ├── JWT Auth & RBAC Middleware                                        │
+│   ├── Academic & Course Service Routes                                  │
+│   ├── Progression Logic Engine & Quiz Evaluator                         │
+│   ├── Gemini AI Tutor Integration Layer                                 │
+│   └── LiveKit WebRTC Token Provider                                     │
+└──────────────┬─────────────────────┬─────────────────────┬──────────────┘
+               │                     │                     │
+               ▼                     ▼                     ▼
+┌───────────────────────────┐ ┌─────────────┐ ┌──────────────────────────┐
+│  PostgreSQL + Prisma ORM  │ │ LiveKit RTC │ │ MinIO / AWS S3 Storage   │
+│  (20+ Relational Models)  │ │ Streaming   │ │ (Notes, Resources, PDFs) │
+└───────────────────────────┘ └─────────────┘ └──────────────────────────┘
+```
+
+---
+
+## 🌟 Role-Based Persona Features
+
+### 👨‍🎓 1. Student Learning Hub
+- **Interactive Course Player**: Video lesson streaming with playback position auto-resume, completion rate tracking, downloadable PDF notes, and supplementary resources.
+- **Adaptive Topic Unlock Pipeline**: Topics automatically unlock as prerequisite criteria (video watch %, quiz score, assignment submission) are satisfied.
+- **Timed Quiz Engine**: Multiple-choice, multi-select, true/false, and comprehension questions with timer enforcement, instant feedback, and attempt history.
+- **AI Homework Assistant**: Integrated 24/7 AI tutor for step-by-step math problem solving, concept explanations, and instant feedback.
+- **Gamification & Analytics**: Experience Points (XP), daily streak counters, completion badges, and performance scorecards.
+
+### 👩‍🏫 2. Teacher Command Center
+- **Course & Lesson Authoring**: Upload course modules, attach video URLs, assign notes, and set prerequisites.
+- **Question Bank & Quiz Builder**: Create dynamic assessment quizzes with customizable passing marks, max attempts, and question ordering.
+- **Submission Grading Desk**: Review student assignment uploads, assign numerical grades, toggle pass/fail status, and write personalized feedback.
+- **Live Meeting Host**: Schedule, launch, and host interactive live classes with student attendance logs, meeting chat, and collaborative whiteboard.
+
+### 🛡️ 3. Admin Command Center
+- **Curriculum Hierarchy Management**: Configure Boards (e.g., CBSE, ICSE, State), Classes (Grade 1-12), Subjects, Units, Chapters, and Topics dynamically.
+- **User & RBAC Administration**: Complete user management, role assignments, permissions configuration, and user status toggling.
+- **Platform Analytics**: Institution-wide metric monitoring including active enrollment, total study hours, course completion rates, and subscription revenues.
+- **Subscription & Billing**: Package tier management with billing frequency configuration (Monthly, Quarterly, Annually) and payment gateways (Razorpay/Stripe).
+
+### 👨‍👩‍👧 4. Parent Monitoring Portal
+- **Child Academic Progress Tracking**: Real-time visibility into enrolled subjects, overall completion percentage, and active learning streaks.
+- **Live Class Attendance Logs**: Attendance verification detailing live class joining times and total participation duration.
+- **Performance Reports**: View quiz scorecards, assignment feedback, and subject-wise strength/weakness analytics.
+
+---
+
+## 📁 Repository & File Structure
+
+```text
+learning-management-system/
+├── .env.example              # Environment variables template
+├── .gitignore                # Git exclusion rules
+├── docker-compose.yml        # Docker setup for Postgres, MinIO, and LiveKit services
+├── eslint.config.js          # ESLint code quality rules
+├── index.html                # Vite HTML application entry point
+├── package.json              # Project dependencies and script declarations
+├── package-lock.json         # Dependency tree lock file
 ├── postcss.config.js         # PostCSS configuration for Tailwind
-├── tailwind.config.js        # TailwindCSS configuration
-├── tsconfig.json             # Root TypeScript configuration
-├── tsconfig.app.json         # Application TypeScript configuration
-├── tsconfig.node.json        # Node TypeScript configuration
-├── vite.config.ts            # Vite bundler configuration
+├── tailwind.config.js        # TailwindCSS utility theme configuration
+├── tsconfig.json             # Root TypeScript compiler options
+├── tsconfig.app.json         # Frontend TypeScript configuration
+├── tsconfig.node.json        # Node execution environment TS configuration
+├── vite.config.ts            # Vite build pipeline & server proxy settings
+├── IMPLEMENTATION_GUIDE.md   # Architectural implementation details
+├── QUICKSTART.md             # Developer quickstart reference
+├── README.md                 # Master project documentation
+├── SETUP.md                  # Detailed environment setup guide
 │
 ├── prisma/
-│   ├── schema.prisma         # Complete PostgreSQL schema (20+ models & enums)
-│   └── seed.ts               # Database seeder script for initial academic hierarchy & demo users
+│   ├── schema.prisma         # PostgreSQL Prisma schema (20+ models & enums)
+│   └── seed.ts               # Database seed script for default curriculum & demo users
 │
-├── public/                   # Static assets (favicons, public images)
+├── public/                   # Public static assets & PDF reference notes
+│   ├── Class12_Chemistry_Vol1_Ch1_Notes.pdf
+│   ├── Class12_Maths_Vol1_Ch1_Notes.pdf
+│   ├── Class12_Physics_Vol1_Ch1_Notes.pdf
+│   ├── biology.png
+│   ├── chemistry.png
+│   ├── favicon.svg
+│   ├── feat_ai_tutor.png
+│   ├── feat_expert_notes.png
+│   ├── feat_webrtc.png
+│   ├── maths.png
+│   ├── physics.png
+│   └── science.png
 │
-├── scripts/                  # Database setup and data generation scripts
+├── scripts/                  # Database management & utility scripts
 │   ├── check-quizzes-and-topics.ts
 │   ├── generate-quizzes.ts
 │   ├── setup-db.ts
 │   └── test-pollinations.ts
 │
-├── server/                   # Backend Express API Server
-│   ├── index.ts              # Express server entry point & middleware mounting
+├── server/                   # Express REST API Server
+│   ├── index.ts              # Express server initialization & middleware mounting
 │   ├── data/
-│   │   └── question-bank.json# Pre-configured question bank seed dataset
+│   │   └── question-bank.json# Pre-seeded assessment questions bank
 │   ├── lib/
-│   │   ├── db.ts             # Prisma DB client singleton instance
-│   │   ├── emailService.ts   # Nodemailer email notification provider
-│   │   ├── mappers.ts        # Data transformers and DTO mappers
-│   │   ├── minio.ts          # S3 / MinIO client initialization & presigned URL helper
-│   │   └── prisma.ts         # Secondary Prisma helper module
+│   │   ├── db.ts             # Prisma DB client singleton
+│   │   ├── emailService.ts   # Nodemailer transactional email module
+│   │   ├── mappers.ts        # DTO data mapper functions
+│   │   ├── minio.ts          # S3 / MinIO storage integration helper
+│   │   └── prisma.ts         # Prisma context helper
 │   ├── middleware/
-│   │   └── auth.ts           # JWT Authentication & RBAC Middleware
+│   │   └── auth.ts           # JWT Authentication & RBAC enforcement middleware
 │   └── routes/
-│       ├── academic.ts       # Board, Class, Subject, Unit, Chapter, Topic routes
+│       ├── academic.ts       # Board, Class, Subject, Unit, Chapter, Topic management APIs
 │       ├── assignment.ts     # Assignment CRUD & submission endpoints
-│       ├── auth.ts           # User registration, login, profile routes
-│       ├── course.ts         # Course creation and listing endpoints
-│       ├── live-class.ts     # LiveKit room token generation & scheduled classes
-│       ├── notification.ts   # User notifications & alerts endpoints
-│       ├── progress.ts       # Student topic progression tracking API
-│       ├── quiz.ts           # Quiz engine endpoints (attempts, submissions, scoring)
-│       ├── tutor.ts          # AI Tutor endpoints powered by Gemini API
-│       └── upload.ts         # S3/MinIO presigned file upload handlers
+│       ├── auth.ts           # User sign-in, registration & profile management
+│       ├── course.ts         # Course creation & enrollment endpoints
+│       ├── live-class.ts     # LiveKit token generation & live meeting scheduler
+│       ├── notification.ts   # System notification alerts endpoints
+│       ├── progress.ts       # Topic unlock & progression evaluation API
+│       ├── quiz.ts           # Quiz engine, attempt grading & results API
+│       ├── tutor.ts          # Google Gemini AI tutor integration API
+│       └── upload.ts         # Cloud storage presigned upload URL API
 │
-└── src/                      # Frontend Application Source Code
-    ├── App.css               # Application component styling
-    ├── App.tsx               # Main React entry component with routing & layout wrappers
-    ├── index.css             # Base Tailwind imports & custom CSS variables
-    ├── main.tsx              # React DOM mounting file
-    ├── vite-env.d.ts         # Vite TypeScript declaration types
-    ├── assets/               # Image assets and SVGs
-    ├── components/           # UI Components & Application Pages
+└── src/                      # React Frontend Source Code
+    ├── App.css               # App-level styling rules
+    ├── App.tsx               # Primary React entry component with routing & layout wrappers
+    ├── index.css             # Tailwind base rules & CSS variables
+    ├── main.tsx              # React DOM mounting script
+    ├── vite-env.d.ts         # Vite TypeScript environment types
+    ├── assets/               # Branding graphics & SVGs
+    ├── components/           # Modular React Views & Components
     │   ├── AdminPortal.tsx           # Admin dashboard for user, board, class management
-    │   ├── AITutor.tsx               # Interactive Gemini AI homework assistant chat UI
-    │   ├── AssignmentPage.tsx        # Student assignment list & file uploader
+    │   ├── AITutor.tsx               # Interactive Gemini AI homework tutor chat UI
+    │   ├── AssignmentPage.tsx        # Student assignment viewer & submission uploader
     │   ├── CourseLearningPage.tsx    # Course viewer, video player, notes & progress bar
-    │   ├── DemoPanel.tsx             # Quick multi-role switcher for demonstration
-    │   ├── ForgotPasswordPage.tsx    # Password reset request view
-    │   ├── GetCredentialsPage.tsx    # Demo credential helper page
-    │   ├── Header.tsx                # Dynamic top navigation header
+    │   ├── DemoPanel.tsx             # Quick multi-role account switcher
+    │   ├── ForgotPasswordPage.tsx    # Password reset view
+    │   ├── GetCredentialsPage.tsx    # Demo credentials reference view
+    │   ├── Header.tsx                # Dynamic navigation header bar
     │   ├── LandingPage.tsx           # Hero section and features marketing page
-    │   ├── LoginPage.tsx             # Universal sign-in page with role detection
+    │   ├── LoginPage.tsx             # Universal login page with role auto-detection
     │   ├── NotesResourcesPage.tsx    # Course notes & downloadable resources tab
-    │   ├── ParentPortal.tsx          # Parent analytics & performance monitoring view
-    │   ├── PlanetLogo.tsx            # EduVerse animated branding logo
-    │   ├── QuizInterface.tsx         # Interactive quiz taker with timer and results
-    │   ├── ResetPasswordPage.tsx     # Secure password reset page
-    │   ├── Sidebar.tsx               # Dynamic navigation sidebar per role
-    │   ├── SignupPage.tsx            # Multi-role user registration modal
-    │   ├── StudentDashboard.tsx      # Main student dashboard with streak & enrolled subjects
-    │   ├── StudentGradesPage.tsx     # Student grades and scorecards summary
-    │   ├── StudentProfile.tsx        # Account preferences and personal profile editor
-    │   ├── SubmissionsPage.tsx       # Teacher assignment submission grading page
-    │   ├── TeacherDashboard.tsx      # Teacher management dashboard
+    │   ├── ParentPortal.tsx          # Parent analytics & performance monitor
+    │   ├── PlanetLogo.tsx            # Animated logo component
+    │   ├── QuizInterface.tsx         # Interactive quiz taker with timer and scoring
+    │   ├── ResetPasswordPage.tsx     # Password reset page
+    │   ├── Sidebar.tsx               # Dynamic navigation sidebar per user role
+    │   ├── SignupPage.tsx            # Multi-role account registration modal
+    │   ├── StudentDashboard.tsx      # Student dashboard with streaks & subjects
+    │   ├── StudentGradesPage.tsx     # Scorecards & progress summary
+    │   ├── StudentProfile.tsx        # Personal profile and account editor
+    │   ├── SubmissionsPage.tsx       # Teacher assignment grading desk
+    │   ├── TeacherDashboard.tsx      # Teacher management portal
     │   └── LiveClass/
-    │       ├── CollaborativeWhiteboard.tsx # Real-time canvas whiteboard
+    │       ├── CollaborativeWhiteboard.tsx # Real-time whiteboard canvas
     │       ├── MeetingChat.tsx             # Live meeting text chat component
-    │       ├── RoomContainer.tsx           # LiveKit streaming container frame
-    │       ├── SimulatedLiveMeeting.tsx    # Fallback interactive live meeting player
-    │       └── ZoomMeetingLayout.tsx       # Grid view layout for video streams
+    │       ├── RoomContainer.tsx           # LiveKit video stream container
+    │       ├── SimulatedLiveMeeting.tsx    # Interactive live meeting player
+    │       └── ZoomMeetingLayout.tsx       # Video stream grid view layout
     ├── data/
-    │   └── question-bank.json        # Quiz options & questions repository
+    │   └── question-bank.json        # Assessment dataset reference
     ├── services/
-    │   └── api.ts                    # Frontend API client library (fetch wrapper with JWT)
+    │   └── api.ts                    # Centralized API client library (Fetch API + JWT)
     ├── store/
     │   ├── curriculumData.ts         # Static curriculum fallback data
     │   ├── index.ts                  # Zustand global application state store
     │   └── types.ts                  # Core TypeScript interface definitions
     └── utils/
         ├── apiBase.ts                # API URL resolution helper
-        ├── localStorage.ts           # Storage helper utilities
-        └── quizGenerator.ts          # Algorithmic quiz generator logic
+        ├── localStorage.ts           # Web storage helper utilities
+        └── quizGenerator.ts          # Quiz generator logic helper
 ```
+
+---
+
+## 🗄️ Database Schema Summary (Prisma ORM)
+
+The relational database architecture is defined in [`prisma/schema.prisma`](file:///c:/Users/Leela/Downloads/Final-LMS-Project-main/prisma/schema.prisma) with over 20 structured models:
+
+- **User Management**: `User`, `Role`, `Permission`, `RolePermission`, `UserRoleJoin`, `Admin`, `Teacher`, `Student`.
+- **Academic Hierarchy**: `Board`, `Class`, `Subject`, `Unit`, `Chapter`, `Topic`.
+- **Content & Media**: `Course`, `CourseVideo`, `CourseNote`, `CourseResource`.
+- **Progression Logic**: `StudentTopicProgress`, `StudentChapterProgress`, `StudentSubjectProgress`, `VideoWatchHistory`.
+- **Assessment Engine**: `Quiz`, `QuizQuestion`, `QuizOption`, `QuizAttempt`, `QuizQuestionResponse`, `QuizResult`.
+- **Assignment System**: `Assignment`, `AssignmentSubmission`, `AssignmentFeedback`.
+- **Live Video Classrooms**: `LiveClass`, `LiveClassParticipant`, `LiveChatMessage`.
+- **Gamification & Analytics**: `StudentAnalytics`, `PerformanceReport`, `LearningStreak`.
+- **Subscriptions & Billing**: `SubscriptionPlan`, `Subscription`, `Payment`.
 
 ---
 
 ## ⚡ Quickstart & Setup Guide
 
-### 1. Prerequisites
-- **Node.js** `v18.x` or `v20.x`
-- **npm** `v9.x` or higher
-- **PostgreSQL** database (or Docker Compose setup)
+### 1. System Requirements
+- **Node.js**: `v18.x` or `v20.x`
+- **npm**: `v9.x` or higher
+- **PostgreSQL Database**
 
 ### 2. Installation
-Clone the repository and install all dependencies:
 ```bash
 git clone https://github.com/leelakrishnakurra97/Final-LMS-Project.git
-cd Final-LMS-Project
+cd learning-management-system
 npm install
 ```
 
 ### 3. Environment Configuration
-Copy the `.env.example` file to create `.env`:
-```bash
-cp .env.example .env
-```
-
-Ensure your `.env` contains valid credentials:
+Create a `.env` file in the root directory:
 ```env
 PORT=5000
 VITE_API_URL=http://localhost:5000
-DATABASE_URL="postgresql://postgres:postgres@localhost:5432/eduverse?schema=public"
+DATABASE_URL="postgresql://postgres:postgres@localhost:5432/learning_management_system?schema=public"
 JWT_SECRET="super-secret-jwt-key"
 GEMINI_API_KEY="your-google-gemini-api-key"
 ```
 
 ### 4. Database Setup & Seeding
-Initialize the database tables and seed initial academic structure:
 ```bash
-# Push Prisma schema to PostgreSQL database
+# Push schema migrations to PostgreSQL
 npm run db:push
 
-# Seed default data (Boards, Classes, Subjects, Demo Users)
+# Seed default academic hierarchy, subjects, and demo accounts
 npm run db:seed
 ```
 
-### 5. Running Local Development Server
-Start both the Express backend server and Vite frontend client concurrently:
+### 5. Start Development Server
 ```bash
 npm run dev
 ```
 
-The application will be accessible at:
-- **Frontend Client**: `http://localhost:5173`
-- **Backend API**: `http://localhost:5000`
+- **Frontend Application**: `http://localhost:5173`
+- **Backend Express API**: `http://localhost:5000`
 
 ---
 
 ## 🐳 Docker Deployment
 
-You can quickly spun up PostgreSQL, MinIO storage, and LiveKit services using Docker Compose:
+Spin up the local PostgreSQL database, MinIO S3 object storage, and LiveKit WebRTC server:
 
 ```bash
 docker-compose up -d
@@ -231,8 +273,6 @@ docker-compose up -d
 ---
 
 ## 🔑 Demo Access Credentials
-
-To test the application across different user roles, use the following credentials or use the built-in **Demo Panel** on the login page:
 
 | Role | Email | Password |
 | :--- | :--- | :--- |
@@ -243,18 +283,6 @@ To test the application across different user roles, use the following credentia
 
 ---
 
-## 📜 Available NPM Scripts
-
-- `npm run dev` - Launches backend server and frontend client concurrently.
-- `npm run dev:client` - Runs Vite development server for frontend.
-- `npm run dev:server` - Runs Express backend server with `tsx watch`.
-- `npm run db:push` - Applies Prisma schema updates directly to the database.
-- `npm run db:seed` - Seeds database with initial academic and user datasets.
-- `npm run db:studio` - Launches Prisma Studio web GUI to browse database records.
-- `npm run build` - Builds production frontend assets and verifies TypeScript types.
-
----
-
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Distributed under the MIT License. See [LICENSE](LICENSE) for details.

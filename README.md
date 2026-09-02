@@ -11,7 +11,7 @@
 [![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.4-38bdf8.svg)](https://tailwindcss.com/)
 [![Docker](https://img.shields.io/badge/Docker-Supported-2496ED.svg)](https://www.docker.com/)
 
-An **Enterprise-Grade, Full-Stack Learning Management System (LMS)** engineered to power modern K-12 and Higher Education platforms. Featuring a dynamic 6-tier academic curriculum hierarchy, automated sequential topic progression, interactive WebRTC video classrooms with LiveKit, 24/7 AI-assisted homework tutoring powered by **Google Gemini API**, comprehensive quiz engines, and robust 4-role Access Control (Student, Teacher, Admin, Parent).
+An **Enterprise-Grade, Full-Stack Learning Management System (LMS)** engineered to power modern K-12 and Higher Education platforms. Featuring a dynamic 6-tier academic curriculum hierarchy, automated sequential topic progression, interactive WebRTC video classrooms with LiveKit, 24/7 AI-assisted homework tutoring powered by **Google Gemini API**, comprehensive quiz engines, and robust 4-role Access Control (Student, Teacher, Admin).
 
 ---
 

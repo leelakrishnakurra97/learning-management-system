@@ -15,7 +15,7 @@ An **Enterprise-Grade, Full-Stack Learning Management System (LMS)** engineered 
 
 ---
 
-## 🚀 Key Engineering Highlights
+## Key Engineering Highlights
 
 - **Full-Stack Type Safety**: Built end-to-end with **TypeScript** across client, server, ORM schema, and API contracts.
 - **Dynamic Academic Hierarchy**: Fully configurable schema modeling `Board ➔ Class ➔ Subject ➔ Unit ➔ Chapter ➔ Topic`.

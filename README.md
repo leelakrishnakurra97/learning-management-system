@@ -272,17 +272,6 @@ docker-compose up -d
 
 ---
 
-## 🔑 Demo Access Credentials
-
-| Role | Email | Password |
-| :--- | :--- | :--- |
-| **Admin** | `admin@eduverse.com` | `admin123` |
-| **Teacher** | `teacher@eduverse.com` | `teacher123` |
-| **Student** | `student@eduverse.com` | `student123` |
-| **Parent** | `parent@eduverse.com` | `parent123` |
-
----
-
 ## 📄 License
 
 Distributed under the MIT License. See [LICENSE](LICENSE) for details.

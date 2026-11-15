@@ -4,7 +4,7 @@ import path from 'path';
 const DATA_DIR = path.join(process.cwd(), 'server', 'data');
 const OUT_FILE = path.join(DATA_DIR, 'question-bank.json');
 
-// Ensure output directory exists
+
 if (!fs.existsSync(DATA_DIR)) {
   fs.mkdirSync(DATA_DIR, { recursive: true });
 }

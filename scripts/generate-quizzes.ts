@@ -9,7 +9,7 @@ if (!fs.existsSync(DATA_DIR)) {
   fs.mkdirSync(DATA_DIR, { recursive: true });
 }
 
-// Load existing progress
+
 let questionBank: Record<string, any[]> = {};
 if (fs.existsSync(OUT_FILE)) {
   try {
